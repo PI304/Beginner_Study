@@ -1,0 +1,16 @@
+.dropdown > .accordionCollapse {
+	overflow: hidden;
+	padding: 0px;
+	transition: padding 0.5s linear;
+	background-color: rgba(205, 205, 205, 0.6);
+}
+/* .dropdown > .accordionCollapse.active {
+} */
+.accordionCollapse > div {
+	transition: height 0.3s linear;
+	height: 0;
+}
+.accordionCollapse.active > div {
+	transition: height 0.3s linear;
+	height: 30px;
+}

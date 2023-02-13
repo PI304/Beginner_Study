@@ -1,0 +1,132 @@
+body {
+	margin: 0;
+	background-color: rgb(255, 249, 253);
+}
+
+header .navigationBar {
+	display: flex;
+	justify-content: end;
+	width: 100vw;
+	height: 65px;
+	background-color: rgba(245, 240, 173, 0.5);
+	padding: 20px 20px 10px 0;
+	position: absolute;
+	text-align: center;
+	box-sizing: border-box;
+	border: none;
+	min-width: 130px;
+	font-size: 1.2rem;
+	font-family: 'Courier New', Courier, monospace;
+}
+/* 여기부터 툴팁 */
+.navigationBar :first-child:hover {
+	color: rgb(219, 161, 211);
+}
+.navigationBar :first-child {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+.navigationBar :first-child span {
+	visibility: hidden;
+	margin-top: 23px;
+	opacity: 0;
+	padding: 10px;
+	border-radius: 6px;
+}
+.navigationBar :first-child:hover span {
+	visibility: visible;
+	background-color: rgba(183, 183, 170, 0.5);
+	color: black;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+.navigationBar :first-child span::after {
+	content: '';
+	border-top: 0px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid rgba(183, 183, 170, 0.5);
+	position: relative;
+	top: -42px;
+	left: -8px;
+}
+/* 여기까지 툴팁*/
+/* 여기서부터 아코디언*/
+.center,
+.introAll {
+	display: flex;
+	justify-content: left;
+}
+.menu {
+	border-right: 1px solid lightgray;
+	margin-top: 65px;
+	padding: 50px 30px 30px 30px;
+	width: 45vw;
+	text-align: center;
+	font-family: 'Courier New', Courier, monospace;
+}
+.menu img {
+	width: 100%;
+	min-width: 150px;
+}
+.intro {
+	display: flex;
+	flex-direction: column;
+	font-family: cursive;
+	padding: 110px 20px 0 30px;
+	text-align: end;
+}
+.intro .hi {
+	font-size: 120px;
+	line-height: 110px;
+}
+.intro .name {
+	font-size: 125px;
+	-webkit-text-fill-color: rgb(251, 202, 218);
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(0, 0, 0, 0.2);
+}
+.im {
+	font-size: 50px;
+	white-space: nowrap;
+}
+.introAll img {
+	width: 40%;
+	padding: 110px 30px 30px 30px;
+}
+footer {
+	border-top: 1px solid lightgray;
+}
+footer div {
+	display: flex;
+	justify-content: center;
+}
+footer span,
+a {
+	padding: 20px;
+}
+@media (max-width: 950px) {
+	.menu {
+		border: none;
+		width: 100%;
+		margin: 0;
+		align-items: center;
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.menu img {
+		width: 50%;
+		padding-top: 40px;
+	}
+	.center {
+		display: block;
+	}
+	.introAll {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 50px;
+	}
+}

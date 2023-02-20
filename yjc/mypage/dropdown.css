@@ -1,5 +1,6 @@
 .dropdownBtn > span {
 	cursor: pointer;
+	padding: 0 35px;
 }
 
 .dropdown {
@@ -9,11 +10,11 @@
 }
 .dropdown > div {
 	background-color: rgba(245, 240, 173, 0.5);
-	width: 130%;
+	width: 100%;
 	padding: 10px 0;
 	position: relative;
 	top: 19px;
-	left: -15px;
+	left: 0;
 	cursor: pointer;
 	transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out,
 		visibility 0.5s ease-in-out;

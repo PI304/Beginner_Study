@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
 .modal {
 	top: 0;
 	left: 0;
@@ -12,7 +13,7 @@
 	position: absolute;
 	background-color: white;
 	width: 45vw;
-	height: 40vw;
+	height: 60vh;
 	position: fixed;
 	top: 15%;
 	left: 30%;
@@ -21,6 +22,9 @@
 	align-items: center;
 	flex-direction: column;
 	font-family: 'Courier New', Courier, monospace;
+	min-width: 450px;
+	min-height: 390px;
+	max-width: 550px;
 }
 .close {
 	position: absolute;
@@ -33,12 +37,48 @@
 	text-shadow: 0 0 0 white;
 	cursor: pointer;
 }
+form {
+	width: 90%;
+	height: 85%;
+	display: flex;
+	justify-content: center;
+}
+fieldset {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	height: 90%;
+	font-size: 25px;
+	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
+}
+input,
+textarea {
+	font-size: 20px;
+	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
+	resize: none;
+}
+label {
+	padding: 2%;
+}
+#submit {
+	width: 20%;
+	align-self: flex-end;
+	margin: 10px;
+}
+
+@media (max-width: 850px) {
+	.modalContent {
+		top: 15vh;
+		left: 15vw;
+		position: absolute;
+	}
+}
+/* font-family: 'Hi Melody'; */
+
 /* 모든 이미지 소스에 width와 height 가 적용되어서 badge가 망가진다.
 그래서 클래스와 속성을 부여했다.*/
-.modalContent img[src='IMG_2664.JPG'] {
+
+/* .modalContent img[src='IMG_2664.JPG'] {
 	width: 70%;
-	height: 70%;
-}
-.badge {
-	padding-top: 20px;
-}
+	height: 70%; 
+}*/

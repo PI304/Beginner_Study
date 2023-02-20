@@ -1,11 +1,14 @@
 body {
 	margin: 0;
 	background-color: rgb(255, 249, 253);
+	min-width: 850px;
 }
-
+.navRight {
+	display: flex;
+}
 header .navigationBar {
 	display: flex;
-	justify-content: end;
+	justify-content: space-between;
 	width: 100vw;
 	height: 65px;
 	background-color: rgba(245, 240, 173, 0.5);
@@ -17,33 +20,35 @@ header .navigationBar {
 	min-width: 130px;
 	font-size: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
+	min-width: 850px;
 }
 /* 여기부터 툴팁 */
-.navigationBar :first-child:hover {
+.navRight :first-child:hover,
+nav i:hover {
 	color: rgb(219, 161, 211);
 }
-.navigationBar :first-child {
+.navRight :first-child {
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
 	flex-direction: column;
 	cursor: pointer;
 }
-.navigationBar :first-child span {
+.navRight :first-child span {
 	visibility: hidden;
 	margin-top: 23px;
 	opacity: 0;
 	padding: 10px;
 	border-radius: 6px;
 }
-.navigationBar :first-child:hover span {
+.navRight :first-child:hover span {
 	visibility: visible;
 	background-color: rgba(183, 183, 170, 0.5);
 	color: black;
 	opacity: 1;
 	transition: opacity 0.2s ease-in;
 }
-.navigationBar :first-child span::after {
+.navRight :first-child span::after {
 	content: '';
 	border-top: 0px solid transparent;
 	border-left: 10px solid transparent;
@@ -54,7 +59,6 @@ header .navigationBar {
 	left: -8px;
 }
 /* 여기까지 툴팁*/
-/* 여기서부터 아코디언*/
 .center,
 .introAll {
 	display: flex;
@@ -68,10 +72,24 @@ header .navigationBar {
 	text-align: center;
 	font-family: 'Courier New', Courier, monospace;
 }
+.showVisitor {
+	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
+	max-height: 380px;
+	overflow: scroll;
+	border-bottom: 1px solid rgb(177, 177, 177);
+	border-top: 1px solid rgb(177, 177, 177);
+}
+div.showVisitor::-webkit-scrollbar {
+	display: none;
+}
+.showVisitor > div {
+	font-size: 25px;
+}
 .menu img {
 	width: 100%;
 	min-width: 150px;
 }
+
 .intro {
 	display: flex;
 	flex-direction: column;
@@ -119,7 +137,7 @@ a {
 	}
 	.menu img {
 		width: 50%;
-		padding-top: 40px;
+		padding: 40px 10px 30px 15px;
 	}
 	.center {
 		display: block;
@@ -128,5 +146,8 @@ a {
 		display: flex;
 		justify-content: center;
 		padding-bottom: 50px;
+	}
+	.intro > div {
+		padding-left: 15px;
 	}
 }

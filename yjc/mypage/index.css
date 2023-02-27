@@ -1,10 +1,23 @@
 body {
 	margin: 0;
-	background-color: rgb(255, 249, 253);
-	min-width: 850px;
+	width: 1470px;
+	height: 1470px;
+	overflow: scroll;
+	background: linear-gradient(
+		rgb(255, 235, 233),
+		rgb(255, 248, 233),
+		rgb(251, 255, 233),
+		rgb(233, 255, 244),
+		rgb(234, 233, 255),
+		rgb(255, 233, 252),
+		rgb(255, 235, 233)
+	);
 }
 .navRight {
 	display: flex;
+}
+header {
+	width: 100%;
 }
 header .navigationBar {
 	display: flex;
@@ -13,14 +26,13 @@ header .navigationBar {
 	height: 65px;
 	background-color: rgba(245, 240, 173, 0.5);
 	padding: 20px 20px 10px 0;
-	position: absolute;
+	position: fixed;
 	text-align: center;
 	box-sizing: border-box;
 	border: none;
-	min-width: 130px;
 	font-size: 1.2rem;
 	font-family: 'Courier New', Courier, monospace;
-	min-width: 850px;
+	z-index: 1;
 }
 /* 여기부터 툴팁 */
 .navRight :first-child:hover,
@@ -59,31 +71,54 @@ nav i:hover {
 	left: -8px;
 }
 /* 여기까지 툴팁*/
-.center,
+.center {
+	display: flex;
+	justify-content: center;
+}
+
 .introAll {
 	display: flex;
-	justify-content: left;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.sidebar {
+	width: 505px;
 }
 .menu {
-	border-right: 1px solid lightgray;
 	margin-top: 65px;
 	padding: 50px 30px 30px 30px;
-	width: 45vw;
-	text-align: center;
+	width: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	font-family: 'Courier New', Courier, monospace;
+	transition: all 0.3s;
+	position: relative;
+	border-right: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	margin-left: 10px;
 }
 .showVisitor {
+	width: 100%;
 	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
 	max-height: 380px;
 	overflow: scroll;
 	border-bottom: 1px solid rgb(177, 177, 177);
 	border-top: 1px solid rgb(177, 177, 177);
+	margin-top: 20px;
 }
-div.showVisitor::-webkit-scrollbar {
+div.showVisitor::-webkit-scrollbar,
+.showVisitor p::-webkit-scrollbar {
 	display: none;
 }
 .showVisitor > div {
 	font-size: 25px;
+}
+.showVisitor > p {
+	overflow: scroll;
+	white-space: nowrap;
 }
 .menu img {
 	width: 100%;
@@ -95,7 +130,7 @@ div.showVisitor::-webkit-scrollbar {
 	flex-direction: column;
 	font-family: cursive;
 	padding: 110px 20px 0 30px;
-	text-align: end;
+	text-align: center;
 }
 .intro .hi {
 	font-size: 120px;
@@ -109,12 +144,10 @@ div.showVisitor::-webkit-scrollbar {
 }
 .im {
 	font-size: 50px;
+	margin-top: 30px;
 	white-space: nowrap;
 }
-.introAll img {
-	width: 40%;
-	padding: 110px 30px 30px 30px;
-}
+
 footer {
 	border-top: 1px solid lightgray;
 }
@@ -126,14 +159,25 @@ footer span,
 a {
 	padding: 20px;
 }
-@media (max-width: 950px) {
+/* 내 욕심은 매우 크다 */
+/* .cursor {
+	border: rgb(189, 189, 189) 2px solid;
+	background-color: rgba(189, 189, 189, 0.7);
+	border-radius: 15px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+} */
+/* @media (max-width: 950px) {
 	.menu {
-		border: none;
-		width: 100%;
-		margin: 0;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
 		align-items: center;
-		padding-left: 0;
-		padding-right: 0;
+		border: none;
+		margin: 0;
 	}
 	.menu img {
 		width: 50%;
@@ -141,6 +185,10 @@ a {
 	}
 	.center {
 		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
 	}
 	.introAll {
 		display: flex;
@@ -150,4 +198,4 @@ a {
 	.intro > div {
 		padding-left: 15px;
 	}
-}
+} */

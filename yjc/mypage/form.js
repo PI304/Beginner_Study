@@ -3,7 +3,7 @@ const visitorsBookTitle = document.querySelector('#visitorsBookTitle');
 const visitorsBookContent = document.querySelector('#visitorsBookContent');
 const showVisitor = document.querySelector('.showVisitor');
 const titleP = document.querySelector('.showVisitor p:nth-child(2)');
-const contentP = document.querySelector('.showVisitor p:last-child');
+const visitorList = document.querySelector('.showVisitor div');
 //form
 const valueTitle = localStorage.getItem('visitorsBookTitle');
 const valueContent = localStorage.getItem('visitorsBookContent');
@@ -18,8 +18,9 @@ visitorsBook.addEventListener('submit', function (event) {
 });
 
 function showVisitorsBook(valueTitle, valueContent) {
-	titleP.innerText = `이름 : ${valueTitle}`;
-	contentP.innerText = `내용
-	${valueContent}`;
+	if (valueTitle !== null || valueContent !== null) {
+		visitorList.innerText = `방명록`;
+		titleP.innerText = `${valueTitle} - ${valueContent}`;
+	}
 }
 showVisitorsBook(valueTitle, valueContent);

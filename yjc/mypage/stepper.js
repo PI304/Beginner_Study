@@ -25,7 +25,15 @@ volumeLogo.addEventListener('click', counterOnClick);
 volPlus.addEventListener('click', plus);
 volMinus.addEventListener('click', minus);
 
-let sound = localStorage.getItem('volume');
+let sound;
+function setSound() {
+	if (localStorage.getItem('volume') !== null) {
+		sound = localStorage.getItem('volume');
+	} else {
+		sound = 50;
+	}
+}
+setSound();
 result.innerText = `${sound}`;
 
 function plus() {

@@ -39,7 +39,7 @@
 }
 form {
 	width: 90%;
-	height: 85%;
+	height: 15%;
 	display: flex;
 	justify-content: center;
 }
@@ -47,13 +47,13 @@ fieldset {
 	display: flex;
 	flex-direction: column;
 	width: 85%;
-	height: 90%;
-	font-size: 25px;
+	height: 85%;
+	font-size: 20px;
 	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
 }
 input,
 textarea {
-	font-size: 20px;
+	font-size: 16px;
 	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
 	resize: none;
 }

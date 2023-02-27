@@ -4,8 +4,9 @@ const accordionCollapse = document.querySelectorAll('.accordionCollapse');
 //accordion
 function openAccordion(i) {
 	accordion[i].addEventListener('click', function () {
-		accordionCollapse[i].classList.toggle('active');
+		accordionCollapse[i].classList.toggle('clicked');
 	});
 }
-openAccordion(0);
-openAccordion(1);
+for (i = 0; i < accordionCollapse.length; i++) {
+	openAccordion(i);
+}

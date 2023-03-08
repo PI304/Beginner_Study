@@ -37,28 +37,35 @@
 	text-shadow: 0 0 0 white;
 	cursor: pointer;
 }
-form {
-	width: 90%;
-	height: 15%;
-	display: flex;
-	justify-content: center;
-}
-fieldset {
+.modalInnerContent {
 	display: flex;
 	flex-direction: column;
-	width: 85%;
-	height: 85%;
+	justify-content: space-between;
+	height: 80%;
+	width: 80%;
+}
+.visitor {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.userinfo {
+	font-size: 30px;
+	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
+}
+.userinfo div {
+	visibility: hidden;
+	opacity: 0;
+	padding: 10px;
+	border-radius: 6px;
 	font-size: 20px;
-	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
 }
-input,
-textarea {
-	font-size: 16px;
-	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
-	resize: none;
-}
-label {
-	padding: 2%;
+.userinfo:hover div {
+	visibility: visible;
+	background-color: rgba(183, 183, 170, 0.5);
+	color: black;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
 }
 #submit {
 	width: 20%;

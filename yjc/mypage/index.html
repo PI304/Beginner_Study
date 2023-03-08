@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="modal.css">
-    <link rel="stylesheet" href="dropdown.css">
-    <link rel="stylesheet" href="accordion.css">
-    <link rel="stylesheet" href="stepper.css">
-    <link rel="stylesheet" href="carousel.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/stepper.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/scroll.css">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
         integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
@@ -55,12 +56,12 @@
     <div class="center">
         <div class="sidebar">
             <div class="menu">
-                <img src="IMG_2664.JPG">
+                <img src="img/IMG_2664.JPG">
                 <form action="#" class="visitorsBook">
                     <fieldset>
                         <legend>방명록을 남겨주세요</legend>
-                        <label for="visitorsBookTitle" onkeypress="return event.key != 'Enter';">이름:
-                            <input type="text" name="visitorsBookTitle" id="visitorsBookTitle">
+                        <label for="UserName" onkeypress="return event.key != 'Enter';">이름:
+                            <input type="text" name="UserName" id="UserName">
                         </label>
                         <label for="visitorsBookContent">내용:</label>
                         <textarea name="visitorsBookContent" id="visitorsBookContent" cols="30"
@@ -69,8 +70,7 @@
                     </fieldset>
                 </form>
                 <div class="showVisitor">
-                    <div></div>
-                    <p></p>
+                    <div>방명록</div>
                 </div>
             </div>
         </div>
@@ -90,10 +90,10 @@
             <div class="introCarousel">
                 <div class="carouselContainer">
                     <div class="carousel">
-                        <img src="IMG_7072.jpeg">
-                        <img src="4A43C911-2605-46E3-90FE-8A4F3F99B8A2.JPG">
-                        <img src="886ABD36-6E01-42F6-9F16-A72624FE8DC5.JPG">
-                        <img src="E3B6DA8D-D260-4E48-BE92-27E7273A55D2_1_105_c.jpeg">
+                        <img src="img/IMG_7072.jpeg">
+                        <img src="img/4A43C911-2605-46E3-90FE-8A4F3F99B8A2.JPG">
+                        <img src="img/886ABD36-6E01-42F6-9F16-A72624FE8DC5.JPG">
+                        <img src="img/E3B6DA8D-D260-4E48-BE92-27E7273A55D2_1_105_c.jpeg">
                     </div>
                 </div>
                 <div class="carouselBtn">
@@ -103,17 +103,22 @@
                     <button class="carouselButtons carouselBtn4"></button>
                 </div>
             </div>
+            <div class="userdata"></div>
         </div>
     </div>
     <div class="modal">
         <div class="modalContent">
             <div class="close">❌</div>
+            <div class="modalInnerContent">
 
-            <div class="badge">
-                <a href="https://www.instagram.com/my_diary333/" target="_blank"><img
-                        src="https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
-                <a href="mailto:yjc3345@naver.com" target="_blank"><img
-                        src="https://img.shields.io/badge/naver-03C75A?style=for-the-badge&logo=naver&logoColor=white"></a>
+                <div class='visitor'></div>
+
+                <div class="badge">
+                    <a href="https://www.instagram.com/my_diary333/" target="_blank"><img
+                            src="https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+                    <a href="mailto:yjc3345@naver.com" target="_blank"><img
+                            src="https://img.shields.io/badge/naver-03C75A?style=for-the-badge&logo=naver&logoColor=white"></a>
+                </div>
             </div>
         </div>
     </div>
@@ -123,15 +128,17 @@
             <a href="mailto:yjc3345@naver.com" target="_blank">Email: yjc3345@naver.com</a>
         </div>
     </footer>
-    <div class="cursor"></div>
-    <script src="dropdown.js"></script>
-    <script src="modal.js"></script>
-    <script src="accordion.js"></script>
-    <script src="form.js"></script>
-    <script src="stepper.js"></script>
-    <script src="carousel.js"></script>
-    <script src="scroll.js"></script>
-    <script src="cursor.js"></script>
+    <!-- <div class="cursor"></div> -->
+    <script src="js/dropdown.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/stepper.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/./node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/api.js"></script>
 </body>
 
 </html>

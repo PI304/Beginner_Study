@@ -9,6 +9,6 @@ window.addEventListener('scroll', () => {
 	scrollTop = document.documentElement.scrollTop;
 	// console.log(scrollTop);
 	let percent = Math.ceil((scrollTop / document.body.scrollHeight) * 100) + 2;
-	console.log(percent);
+	// console.log(percent);
 	menu.style.top = `${percent}%`;
 });

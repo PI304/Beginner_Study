@@ -1,0 +1,201 @@
+body {
+	margin: 0;
+	width: 1470px;
+	height: 1470px;
+	overflow: scroll;
+	background: linear-gradient(
+		rgb(255, 235, 233),
+		rgb(255, 248, 233),
+		rgb(251, 255, 233),
+		rgb(233, 255, 244),
+		rgb(234, 233, 255),
+		rgb(255, 233, 252),
+		rgb(255, 235, 233)
+	);
+}
+.navRight {
+	display: flex;
+}
+header {
+	width: 100%;
+}
+header .navigationBar {
+	display: flex;
+	justify-content: space-between;
+	width: 100vw;
+	height: 65px;
+	background-color: rgba(245, 240, 173, 0.5);
+	padding: 20px 20px 10px 0;
+	position: fixed;
+	text-align: center;
+	box-sizing: border-box;
+	border: none;
+	font-size: 1.2rem;
+	font-family: 'Courier New', Courier, monospace;
+	z-index: 1;
+}
+/* 여기부터 툴팁 */
+.navRight :first-child:hover,
+nav i:hover {
+	color: rgb(219, 161, 211);
+}
+.navRight :first-child {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	cursor: pointer;
+}
+.navRight :first-child span {
+	visibility: hidden;
+	margin-top: 23px;
+	opacity: 0;
+	padding: 10px;
+	border-radius: 6px;
+}
+.navRight :first-child:hover span {
+	visibility: visible;
+	background-color: rgba(183, 183, 170, 0.5);
+	color: black;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+.navRight :first-child span::after {
+	content: '';
+	border-top: 0px solid transparent;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 10px solid rgba(183, 183, 170, 0.5);
+	position: relative;
+	top: -42px;
+	left: -8px;
+}
+/* 여기까지 툴팁*/
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.introAll {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-content: center;
+}
+.sidebar {
+	width: 505px;
+}
+.menu {
+	margin-top: 65px;
+	padding: 50px 30px 30px 30px;
+	width: 290px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Courier New', Courier, monospace;
+	transition: all 0.3s;
+	position: relative;
+	border-right: 1px solid lightgray;
+	border-left: 1px solid lightgray;
+	margin-left: 10px;
+}
+.showVisitor {
+	width: 100%;
+	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
+	max-height: 380px;
+	overflow: scroll;
+	border-bottom: 1px solid rgb(177, 177, 177);
+	border-top: 1px solid rgb(177, 177, 177);
+	margin-top: 20px;
+}
+div.showVisitor::-webkit-scrollbar,
+.showVisitor p::-webkit-scrollbar {
+	display: none;
+}
+.showVisitor > div {
+	font-size: 25px;
+}
+.showVisitor > p {
+	overflow: scroll;
+	white-space: nowrap;
+}
+.menu img {
+	width: 100%;
+	min-width: 150px;
+}
+
+.intro {
+	display: flex;
+	flex-direction: column;
+	font-family: cursive;
+	padding: 110px 20px 0 30px;
+	text-align: center;
+}
+.intro .hi {
+	font-size: 120px;
+	line-height: 110px;
+}
+.intro .name {
+	font-size: 125px;
+	-webkit-text-fill-color: rgb(251, 202, 218);
+	-webkit-text-stroke-width: 2px;
+	-webkit-text-stroke-color: rgb(0, 0, 0, 0.2);
+}
+.im {
+	font-size: 50px;
+	margin-top: 30px;
+	white-space: nowrap;
+}
+
+footer {
+	border-top: 1px solid lightgray;
+}
+footer div {
+	display: flex;
+	justify-content: center;
+}
+footer span,
+a {
+	padding: 20px;
+}
+/* 내 욕심은 매우 크다 */
+/* .cursor {
+	border: rgb(189, 189, 189) 2px solid;
+	background-color: rgba(189, 189, 189, 0.7);
+	border-radius: 15px;
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	top: -10px;
+	left: -10px;
+} */
+/* @media (max-width: 950px) {
+	.menu {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		border: none;
+		margin: 0;
+	}
+	.menu img {
+		width: 50%;
+		padding: 40px 10px 30px 15px;
+	}
+	.center {
+		display: block;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.introAll {
+		display: flex;
+		justify-content: center;
+		padding-bottom: 50px;
+	}
+	.intro > div {
+		padding-left: 15px;
+	}
+} */

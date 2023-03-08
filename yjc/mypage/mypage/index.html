@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/dropdown.css">
+    <link rel="stylesheet" href="css/accordion.css">
+    <link rel="stylesheet" href="css/stepper.css">
+    <link rel="stylesheet" href="css/carousel.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navigationBar">
+            <div class="volumeCounter">
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="counter">
+                    <button class="counterBtn plus">+</button>
+                    <!-- <input type="button" onclick="count('plus')" value="+" /> -->
+                    <div id="result"></div>
+                    <!-- <input type="button" onclick="count('minus')" value="-" /> -->
+                    <button class="counterBtn minus">-</button>
+                </div>
+            </div>
+            <div class="navRight">
+                <div>ABOUT ME
+                    <span>yayayyayayay</span>
+                </div>
+                <div class="dropdownBtn">
+                    <span class="dropD">DROP DOWN</span>
+                    <div class="dropdown">
+                        <div id="modalBtn">MODAL</div>
+                        <div class="accordion">ACCORDION 1</div>
+                        <div class="accordionCollapse">
+                            <div>one</div>
+                            <div>one</div>
+                            <div>one</div>
+                        </div>
+                        <div class="accordion">ACCORDION 2</div>
+                        <div class="accordionCollapse">
+                            <div>two</div>
+                            <div>two</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="center">
+        <div class="sidebar">
+            <div class="menu">
+                <img src="img/IMG_2664.JPG">
+                <form action="#" class="visitorsBook">
+                    <fieldset>
+                        <legend>방명록을 남겨주세요</legend>
+                        <label for="UserName" onkeypress="return event.key != 'Enter';">이름:
+                            <input type="text" name="UserName" id="UserName">
+                        </label>
+                        <label for="visitorsBookContent">내용:</label>
+                        <textarea name="visitorsBookContent" id="visitorsBookContent" cols="30"
+                            maxlength="25"></textarea>
+                        <input type="submit" id="submit">
+                    </fieldset>
+                </form>
+                <div class="showVisitor">
+                    <div>방명록</div>
+                </div>
+            </div>
+        </div>
+        <div class="introAll">
+            <div class="intro">
+                <div class="hi">Hi, I'm
+                    <span class="hi name">Célya.</span>
+                </div>
+                <br>
+                <div class="im">I don't know what to write</div>
+                <div class="im">so I am writing the words</div>
+                <div class="im">that comes out in my mind</div>
+                <div class="im">welcome to my personal page!</div>
+                <div class="im">please leave now</div>
+                <div class="im">BYE</div>
+            </div>
+            <div class="introCarousel">
+                <div class="carouselContainer">
+                    <div class="carousel">
+                        <img src="img/IMG_7072.jpeg">
+                        <img src="img/4A43C911-2605-46E3-90FE-8A4F3F99B8A2.JPG">
+                        <img src="img/886ABD36-6E01-42F6-9F16-A72624FE8DC5.JPG">
+                        <img src="img/E3B6DA8D-D260-4E48-BE92-27E7273A55D2_1_105_c.jpeg">
+                    </div>
+                </div>
+                <div class="carouselBtn">
+                    <button class="carouselButtons carouselBtn1"></button>
+                    <button class="carouselButtons carouselBtn2"></button>
+                    <button class="carouselButtons carouselBtn3"></button>
+                    <button class="carouselButtons carouselBtn4"></button>
+                </div>
+            </div>
+            <div class="userdata"></div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modalContent">
+            <div class="close">❌</div>
+            <div class="modalInnerContent">
+
+                <div class='visitor'></div>
+
+                <div class="badge">
+                    <a href="https://www.instagram.com/my_diary333/" target="_blank"><img
+                            src="https://img.shields.io/badge/instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white"></a>
+                    <a href="mailto:yjc3345@naver.com" target="_blank"><img
+                            src="https://img.shields.io/badge/naver-03C75A?style=for-the-badge&logo=naver&logoColor=white"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <span>이름: 최유진</span>
+            <a href="mailto:yjc3345@naver.com" target="_blank">Email: yjc3345@naver.com</a>
+        </div>
+    </footer>
+    <!-- <div class="cursor"></div> -->
+    <script src="js/dropdown.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/stepper.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="js/./node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/accordion.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>

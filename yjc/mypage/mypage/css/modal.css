@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Batang&display=swap');
+.modal {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background-color: rgb(0, 0, 0, 0.4);
+	display: none;
+	z-index: 1;
+}
+.modalContent {
+	position: absolute;
+	background-color: white;
+	width: 45vw;
+	height: 60vh;
+	position: fixed;
+	top: 15%;
+	left: 30%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Courier New', Courier, monospace;
+	min-width: 450px;
+	min-height: 390px;
+	max-width: 550px;
+}
+.close {
+	position: absolute;
+	top: 10px;
+	right: -45px;
+	font-size: 30px;
+	border: none;
+	background: none;
+	color: transparent;
+	text-shadow: 0 0 0 white;
+	cursor: pointer;
+}
+.modalInnerContent {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 80%;
+	width: 80%;
+}
+.visitor {
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+}
+.userinfo {
+	font-size: 30px;
+	font-family: 'Gowun Batang', 'Courier New', Courier, monospace;
+}
+.userinfo div {
+	visibility: hidden;
+	opacity: 0;
+	padding: 10px;
+	border-radius: 6px;
+	font-size: 20px;
+}
+.userinfo:hover div {
+	visibility: visible;
+	background-color: rgba(183, 183, 170, 0.5);
+	color: black;
+	opacity: 1;
+	transition: opacity 0.2s ease-in;
+}
+#submit {
+	width: 20%;
+	align-self: flex-end;
+	margin: 10px;
+}
+
+@media (max-width: 850px) {
+	.modalContent {
+		top: 15vh;
+		left: 15vw;
+		position: absolute;
+	}
+}
+/* font-family: 'Hi Melody'; */
+
+/* 모든 이미지 소스에 width와 height 가 적용되어서 badge가 망가진다.
+그래서 클래스와 속성을 부여했다.*/
+
+/* .modalContent img[src='IMG_2664.JPG'] {
+	width: 70%;
+	height: 70%; 
+}*/

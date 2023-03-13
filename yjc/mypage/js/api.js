@@ -83,47 +83,38 @@ const addPostInfo = (event) => {
 visitorsBook.addEventListener('submit', addPostInfo);
 
 const getData = async () => {
-	axios
-		//모달창에 뜨는 유저 정보
+	//모달창에 뜨는 유저 정보
+	const res = await axios
 		.get('http://52.78.238.141/api/users')
-		.then((res) => {
-			const users = res.data;
-			// console.log(users);
-			appendToModal(users);
-		})
 		.catch((error) => console.log(error));
+	const users = res.data;
+	appendToModal(users);
 };
 
 const getpost = async () => {
-	axios
-		//왼쪽 사이드바에 뜨는 방명록 불러오기
+	//왼쪽 사이드바에 뜨는 방명록 불러오기
+	const res = await axios
 		.get('http://52.78.238.141/api/posts/')
-		.then((res) => {
-			const postInfo = res.data;
-			console.log(postInfo);
-			getPostInfo(postInfo);
-		})
 		.catch((error) => console.log(error));
+	const postInfo = res.data;
+	console.log(postInfo);
+	getPostInfo(postInfo);
 };
 
 const addPost = async () => {
-	axios
-		//방명록 남기기
+	//방명록 남기기
+	const res = await axios
 		.post('http://52.78.238.141/api/posts/', postsInfo)
-		.then((res) => {
-			console.log(res);
-		})
 		.catch((error) => console.log(error));
+	console.log(res);
 };
 
 const delPost = async (postId) => {
-	axios
-		//방명록 삭제
+	//방명록 삭제
+	const res = await axios
 		.delete(`http://52.78.238.141/api/posts/${postId}`)
-		.then((res) => {
-			console.log(res);
-		})
 		.catch((error) => console.log(error));
+	console.log(res);
 };
 getData();
 getpost();

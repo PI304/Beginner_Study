@@ -124,6 +124,7 @@ nav i:hover {
 	cursor: pointer;
 }
 div.showVisitor::-webkit-scrollbar,
+.showVisitorsBook::-webkit-scrollbar,
 .showVisitor p::-webkit-scrollbar {
 	display: none;
 }

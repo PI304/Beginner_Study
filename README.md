@@ -107,6 +107,9 @@ $ git push origin [브랜치명]
 3. 이상이 없으면 Approve 합니다.
 4. Approve된 PR을 코드작성자가 Self Merge 합니다.
 
+*️⃣ Merge 시 나타나는 템플릿을 아래와 같이 채워주세요
+<img width="846" alt="스크린샷 2023-04-05 23 56 11" src="https://user-images.githubusercontent.com/110515401/230120382-3073d734-5675-4ee6-af1f-b39a1909fe77.png">
+
 
 ### 7. 로컬에서 master 브랜치로 체크아웃한 뒤 Pull하고, 새로운 브랜치로 분기하여 다음 작업을 진행해주세요.
 

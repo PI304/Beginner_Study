@@ -115,6 +115,7 @@ $ git push origin [브랜치명]
 
 ```shell
 $ git checkout master
+$ git pull origin master
 $ git checkout -b Week?/
 ```
 

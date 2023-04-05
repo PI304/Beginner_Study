@@ -1,0 +1,64 @@
+body {
+  word-break: keep-all; 
+  font-family: "Pretendard Variable", sans-serif;
+  background-color: rgb(234, 232, 232)
+}
+.header {
+  padding-top: 11px;
+  padding-bottom: 5px;
+  padding-right: 59px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(75, 75, 75);
+  margin-top: 10px;
+}
+.header a{
+  font-weight: 400;
+  font-size: 16px;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(75, 75, 75);
+}
+
+.header .nav { /*seoyoung*/
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 4px;
+  margin-top: 10px;
+}
+
+.header .menu1 {
+  display: flex;
+  margin-left: 1050px;
+  margin-top: 10px;
+
+}
+.header .menu2 {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+.header .menu3 {
+  display: flex;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+a.menu1:hover{
+  color: rgb(134, 134, 134);
+}
+
+a.menu2:hover{
+  color: rgb(134, 134, 134);
+  }
+
+a.menu3:hover{
+  color: rgb(134, 134, 134);
+  }
+
+  img {
+  width: 40px;
+  height: 40px;
+  margin-left: 40px;
+}

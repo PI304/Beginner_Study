@@ -1,0 +1,132 @@
+.iconmom { /*인삿말, 버튼 부모선택자*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconmom .icon{ /*가운데 이미지*/
+  width: 480px;
+  height: 480px;
+  transform: translateX(310px);
+  margin-bottom: 200px;
+  }
+
+.iconmom h1 { /*hello world*/
+  font-size: 80px;
+  margin-bottom: 360px;
+  transform: translateX(265px);
+}
+
+.iconmom .text{ /*부제목, 인삿말*/
+  font-weight: 100;
+  transform: translateX(-176px);
+  margin-bottom: 150px;
+}
+
+.iconmom .text span{ /*인삿말*/
+  font-weight: 250;
+  text-align: left;
+  justify-content: center;
+  display: flex;
+  transform: translateY(-12px);
+}
+
+.iconmom .text h2 { /*부제목*/
+text-align: center;
+margin-top: 100px;
+}
+
+.iconmom .button { /*전체 버튼*/
+  font-weight: 500;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 550px;
+  transform: translateX(-510px) translateY(-150px);
+}
+
+.iconmom .button .button1 {
+  border: 0.5px solid rgba(128, 128, 128, 0.44);
+  width: 130px;
+  height: 130px;
+  background-color: #99a9a5e3;
+  border-radius: 100px; /*요소 모서리 둥글게 */
+  box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  text-decoration: none;
+  color:rgb(35, 34, 34);
+}
+.iconmom .button .button2 {
+  border: 0.5px solid rgba(128, 128, 128, 0.363);
+  width: 130px;
+  height: 130px;
+  background-color: #BCCEC0;
+  border-radius: 100px; /*요소 모서리 둥글게 */
+  box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  text-decoration: none;
+  color:rgb(35, 34, 34);
+}
+.iconmom .button .button3 {
+  border: 0.5px solid rgba(128, 128, 128, 0.252);
+  width: 130px;
+  height: 130px;
+  background-color:#b2c7c2;
+  border-radius: 100px; /*요소 모서리 둥글게 */
+  box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  text-decoration: none;
+  color:rgb(35, 34, 34);
+}
+
+
+.iconmom .button1:hover{
+  background-color: rgb(212, 207, 181);
+}
+.iconmom .button2:hover{
+  background-color: rgba(180, 194, 166, 0.859);
+}
+.iconmom .button3:hover{
+  background-color: rgb(212, 213, 199);
+}
+
+.footer { /*밑 전체*/
+  font-weight: 550;
+  font-size: 18px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 330px;
+  border-top: 0.1px solid rgba(172, 172, 172, 0.748);
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.footer div{ /*밑의 값*/
+  font-size: 15px;
+  font-weight: 200;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-top: 8px;
+  padding-bottom: 60px;
+}
+.last {
+  font-size: 12px;
+  font-weight: 100;
+  margin-left: 1300px;
+  display: flex;
+  transform: translateY(-95px);
+}

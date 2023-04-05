@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>About me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        :root{
+            --accent-color:#949494;
+            --text-color:#040403;
+            --background-color:#c4c4c3;
+        }
+        body{
+            margin:0;
+            font-family: 'Roboto mono', sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: var(--text-color);
+        }
+        .navbar{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: var(--background-color);
+            padding: 4px 15px;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .nav_logo{
+            display:flex;
+            align-items: center;
+        }
+        .nav_logo img{
+            padding: 0px 12px 0px 0px;
+        }
+        .nav_menu{
+            width:max-content;
+            display:flex;
+            list-style: none;
+            padding: 0px;
+        }
+        .nav_menu li{
+            padding: 4px 48px;
+        }
+        .nav_menu li:hover{
+            background-color: var(--accent-color);
+        }
+        .navbar_toggleBtn{
+            display:none;
+        }
+        #article_1{
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            background-image: 
+            linear-gradient(to bottom,  rgba(250, 250, 250, 0.3), rgba(59, 59, 59, 0.9)),
+            url('img/smiley_background.jpg');
+            max-width: 100%;
+            height: 400px;
+            background-size: cover;
+            color: white;
+            padding: 0px 80px;
+        }
+        #article_1 h1{
+            margin: 4px 0px;
+            font-size: 72px;
+        }
+        #article_1 h2{
+            margin: 8px 0px;
+            font-size: 28px;
+        }
+        #article_2{
+            display:flex;
+        }
+        #article_2>div{
+            width:25%;
+            display : flex;
+            justify-content: center;
+            align-items : center;
+            padding-left: 36px;
+            font-size:72px;
+            font-weight: bold;
+        }
+        #article_2 ul{
+            display:flex;
+            width:75%;
+            justify-content: space-between;
+            padding-right: 60px;
+            align-items: center;
+            font-size:18px;
+        }
+        #article_2 ul li{
+            width: 30%;
+            padding: 12px 0px;
+            list-style:none;
+            text-align:center;
+            background-color:var(--background-color);
+            border-radius: 10px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        }
+        #article_3{
+            text-align:center;
+            margin: 0px 0px 68px 0px;
+        }
+        #article_3 h1{
+            font-size:48px;
+        }
+        #article_3 ul{
+            padding: 0px;
+        }
+        #article_3 li{
+            list-style:none;
+        }
+        footer{
+            border-top: 2px solid #c4c4c3;
+            text-align: center;
+            padding: 10px 0px 40px 0px;
+        }
+        @media screen and (max-width:700px){
+            .navbar{
+                flex-direction: column;
+                align-items:flex-start;
+                margin:0;
+            }
+            .nav_menu{
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+            }
+            .nav_menu li{
+                width: 100%;
+                text-align: center;
+            }
+            #article_2{
+                flex-direction: column;
+                align-items: center;
+            }
+            #article_2 div{
+                width:100%;
+            }
+            #article_2 ul{
+                flex-direction:column;
+                padding:20px;
+                width: 90%;
+            }
+            #article_2 ul li{
+                width:100%;
+                margin: 8px 0px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav_logo">
+                <img src="img/NavSmiley.png" alt="smiley" width="40">
+                <a href="index.html"> About me</a>
+            </div>
+            <ul class="nav_menu">
+                <li><a href="">More Info</a></li>
+                <li><a href="">Photos</a></li>
+                <li><a href="">Daily</a></li>
+                <li><a href="">Send A Message</a></li>
+            </ul>
+            <a href="" class="navbar_toggleBtn"><img src="img/hamburger_icon.png" alt="menu" width="40"></a>
+        </nav>
+    </header>
+    <section>
+        <article id="article_1">
+            <h1>Hello!</h1>
+            <h2>I'm HUI.</h2>
+            <h3>Scroll down to know me.</h3>
+        </article>
+        <img>
+        <article id="article_2">
+            <div>
+                I am  : 
+            </div>
+            <ul>
+                <li>majoring Software</br>at SMWU</li>
+                <li>now studying JS</br>at PI</li>
+                <li>planning to make</br>lots of websites</li>
+            </ul>
+        </article>
+        <article id="article_3">
+            <h1>Plans for this year</h1>
+            <ul>
+                <li>
+                    Learn how to make nice websites
+                </li>
+                <li>
+                    Post videos on youtube
+                </li>
+                <li>
+                    Make a game
+                </li>
+                <li>
+                    Travel throughout Europe
+                </li>
+            </ul>
+        </article>
+    </section>
+    <footer>
+        <div>sheekang30302@gmail.com</div>
+        <a href=""><img src="img/instagram_icon.png" alt="instagram" width="30"></a>
+        <a href=""><img src="img/youtube_icon.png" alt="youtube" width="30"></a>
+    </footer>
+</body>
+</html>

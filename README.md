@@ -119,6 +119,14 @@ $ git pull origin master
 $ git checkout -b Week?/
 ```
 
+>주의사항
+>>브랜치를 Local에서 만들고 지우지 않으면 다음에 비슷한 이름을 사용한 브랜치를 만들 수 없게 됩니다 반드시 브랜치를 지워주세요!
+```
+// 무슨 브랜치 있는지 확인
+$ git branch
+
+// 브랜치 삭제
+$ git branch -d 
 
 
 ## 5. 브랜치 이름 컨벤션

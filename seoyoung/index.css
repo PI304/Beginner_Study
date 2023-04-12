@@ -36,7 +36,7 @@ text-align: center;
 margin-top: 100px;
 }
 
-.iconmom .button { /*전체 버튼*/
+.iconmom #button { /*전체 버튼*/
   font-weight: 500;
   font-size: 22px;
   display: flex;
@@ -47,7 +47,7 @@ margin-top: 100px;
   transform: translateX(-510px) translateY(-150px);
 }
 
-.iconmom .button .button1 {
+.iconmom #button .button1 {
   border: 0.5px solid rgba(128, 128, 128, 0.44);
   width: 130px;
   height: 130px;
@@ -61,7 +61,7 @@ margin-top: 100px;
   text-decoration: none;
   color:rgb(35, 34, 34);
 }
-.iconmom .button .button2 {
+.iconmom #button .button2 {
   border: 0.5px solid rgba(128, 128, 128, 0.363);
   width: 130px;
   height: 130px;
@@ -75,7 +75,7 @@ margin-top: 100px;
   text-decoration: none;
   color:rgb(35, 34, 34);
 }
-.iconmom .button .button3 {
+.iconmom #button .button3 {
   border: 0.5px solid rgba(128, 128, 128, 0.252);
   width: 130px;
   height: 130px;
@@ -91,13 +91,13 @@ margin-top: 100px;
 }
 
 
-.iconmom .button1:hover{
+.iconmom #button .button1:hover{
   background-color: rgb(212, 207, 181);
 }
-.iconmom .button2:hover{
+.iconmom #button .button2:hover{
   background-color: rgba(180, 194, 166, 0.859);
 }
-.iconmom .button3:hover{
+.iconmom #button .button3:hover{
   background-color: rgb(212, 213, 199);
 }
 

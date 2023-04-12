@@ -55,7 +55,7 @@ $ git clone https://github.com/PI304/Beginner_Study.git
 
 ## 4. 협업 방법
 ```
-Pull Request는 화요일 00시부터 23:59분까지 날릴 수 있습니다
+Pull Request는 화요일 00시부터 23:59분까지  수 있습니다
 Pull Request를 날리면 운영진이 코드를 리뷰한 뒤 수정할 것이 있으면 수정 요청을 드립니다
 운영진이 Merge를 Approve해주면 본인이 Merge하면 됩니다
 ```

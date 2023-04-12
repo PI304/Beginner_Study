@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>About me</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="nav_logo">
+          <img src="img/NavSmiley.png" alt="smiley" width="40" />
+          <a href="index.html"> About me</a>
+        </div>
+        <ul class="nav_menu">
+          <li><a href="info.html">More Info</a></li>
+          <li><a href="photos.html">Photos</a></li>
+          <li><a href="comment.html">Comments</a></li>
+        </ul>
+        <a href="" class="navbar_toggleBtn"
+          ><img src="img/hamburger_icon.png" alt="menu" width="40"
+        /></a>
+      </nav>
+    </header>
+    <section id="comment">
+      <h1>Leave Any Comments!</h1>
+      <div id="disqus_thread"></div>
+      <script>
+        /**
+         *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+         *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
+        /*
+    var disqus_config = function () {
+    this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+    this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+    };
+    */
+        (function () {
+          // DON'T EDIT BELOW THIS LINE
+          var d = document,
+            s = d.createElement("script");
+          s.src = "https://mypage-cuhvoec48j.disqus.com/embed.js";
+          s.setAttribute("data-timestamp", +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+      </script>
+      <noscript
+        >Please enable JavaScript to view the
+        <a href="https://disqus.com/?ref_noscript"
+          >comments powered by Disqus.</a
+        ></noscript
+      >
+    </section>
+    <footer>
+      <div>sheekang30302@gmail.com</div>
+      <a href=""
+        ><img src="img/instagram_icon.png" alt="instagram" width="30"
+      /></a>
+      <a href=""><img src="img/youtube_icon.png" alt="youtube" width="30" /></a>
+    </footer>
+  </body>
+</html>

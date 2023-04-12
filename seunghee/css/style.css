@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap");
+:root {
+  --accent-color: #949494;
+  --text-color: #040403;
+  --background-color: #c4c4c3;
+}
+body {
+  margin: 0;
+  font-family: "Roboto mono", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--text-color);
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 4px 15px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.nav_logo {
+  display: flex;
+  align-items: center;
+}
+.nav_logo img {
+  padding: 0px 12px 0px 0px;
+}
+.nav_menu {
+  width: max-content;
+  display: flex;
+  list-style: none;
+  padding: 0px;
+}
+.nav_menu li {
+  padding: 4px 48px;
+}
+.nav_menu li:hover {
+  background-color: var(--accent-color);
+}
+.navbar_toggleBtn {
+  display: none;
+}
+#article_1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(250, 250, 250, 0.3),
+      rgba(59, 59, 59, 0.9)
+    ),
+    url("../img/smiley_background.jpg");
+  max-width: 100%;
+  height: 400px;
+  background-size: cover;
+  color: white;
+  padding: 0px 80px;
+}
+#article_1 h1 {
+  margin: 4px 0px;
+  font-size: 72px;
+}
+#article_1 h2 {
+  margin: 8px 0px;
+  font-size: 28px;
+}
+#article_2 {
+  display: flex;
+}
+#article_2 > div {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 36px;
+  font-size: 72px;
+  font-weight: bold;
+}
+#article_2 ul {
+  display: flex;
+  width: 75%;
+  justify-content: space-between;
+  padding-right: 60px;
+  align-items: center;
+  font-size: 18px;
+}
+#article_2 ul li {
+  width: 30%;
+  padding: 12px 0px;
+  list-style: none;
+  text-align: center;
+  background-color: var(--background-color);
+  border-radius: 10px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+#article_3 {
+  text-align: center;
+  margin: 0px 0px 68px 0px;
+}
+#article_3 h1 {
+  font-size: 48px;
+}
+#article_3 ul {
+  padding: 0px;
+}
+#article_3 li {
+  list-style: none;
+}
+footer {
+  border-top: 2px solid #c4c4c3;
+  text-align: center;
+  padding: 10px 0px 40px 0px;
+}
+/*comment.html*/
+#comment {
+  width: 70%;
+  margin: 64px 15%;
+  text-align: center;
+  font-size: 24px;
+}
+#comment > h1 {
+  margin-bottom: 28px;
+}
+/*반응형*/
+@media screen and (max-width: 800px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .nav_menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .nav_menu li {
+    width: 100%;
+    text-align: center;
+  }
+  #article_2 {
+    flex-direction: column;
+    align-items: center;
+  }
+  #article_2 div {
+    width: 100%;
+  }
+  #article_2 ul {
+    flex-direction: column;
+    padding: 20px;
+    width: 90%;
+  }
+  #article_2 ul li {
+    width: 100%;
+    margin: 8px 0px;
+  }
+  /*comment.html*/
+  #comment {
+    width: 100%;
+    margin: 32px 0px;
+    text-align: center;
+  }
+}

@@ -84,7 +84,7 @@ $ git push origin [브랜치명]
 ### 4. Github에서 PR을 생성합니다. PR 시 나타나는 템플릿을 채워주세요.
 
 ```markdown
-## Feature Description (브랜치 이름을 적어주세요!)
+## Feature Description
 
 - 이런 이런 기능입니다
 

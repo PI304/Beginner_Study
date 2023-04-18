@@ -93,8 +93,7 @@ $ git push origin [브랜치명]
 - 이런 이런 점을 유의해주세요
 ```
 아래 예시를 참고해주세요
-<img width="920" alt="스크린샷 2023-04-05 23 42 48" src="https://user-images.githubusercontent.com/110515401/230116422-6631dd1a-19b7-414d-b143-3521a4765b25.png">
-
+<img width="919" alt="스크린샷 2023-04-18 23 19 02" src="https://user-images.githubusercontent.com/110515401/232806371-b9a2bc4e-e03c-41ed-b61a-94310c598ee7.png">
 
 
 ### 5. Review 과정을 거칩니다.

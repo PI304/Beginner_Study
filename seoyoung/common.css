@@ -3,7 +3,7 @@ body {
   font-family: "Pretendard Variable", sans-serif;
   background-color: rgb(234, 232, 232)
 }
-.header {
+#header {
   padding-top: 11px;
   padding-bottom: 5px;
   padding-right: 59px;
@@ -13,7 +13,7 @@ body {
   color: rgb(75, 75, 75);
   margin-top: 10px;
 }
-.header a{
+#header a{
   font-weight: 400;
   font-size: 16px;
   margin-top: 10px;
@@ -21,25 +21,25 @@ body {
   color: rgb(75, 75, 75);
 }
 
-.header .nav { /*seoyoung*/
+#header .nav { /*seoyoung*/
   font-size: 18px;
   font-weight: 700;
   margin-left: 4px;
   margin-top: 10px;
 }
 
-.header .menu1 {
+#header .menu1 {
   display: flex;
   margin-left: 1050px;
   margin-top: 10px;
 
 }
-.header .menu2 {
+#header .menu2 {
   display: flex;
   margin-left: 20px;
   margin-top: 10px;
 }
-.header .menu3 {
+#header .menu3 {
   display: flex;
   margin-left: 20px;
   margin-top: 10px;

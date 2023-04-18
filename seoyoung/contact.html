@@ -1,26 +1,77 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./common.css" />
-  <link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css"
-/>
-  <title>contact</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./contact.css" />
+    <link
+      rel="stylesheet"
+      as="style"
+      crossorigin
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.6/dist/web/variable/pretendardvariable-dynamic-subset.css"
+    />
+    <title>contact</title>
+    <link
+      href="./img/favicon.ico2.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <script defer src="./contact.js"></script>
+  </head>
   <body>
-    <did id="header">
+    <div id="header">
       <img src="./img/seoyoung1.png" />
-      <span class="nav">SeoYoung</span>
-      <a href="./about.html" class="menu1">About</a>
-      <a href="./project.html" class="menu2">Projects</a>
-      <a href="./contact.html" class="menu3">Contact</a>
-    </did>
-</body>
+      <a href="./index.html" class="nav">SeoYoung</a>
+      <div class="menu">
+        <a href="./about.html" class="menu1">About</a>
+        <a href="./project.html" class="menu2">Projects</a>
+        <a href="./contact.html" class="menu3">Contact</a>
+      </div>
+    </div>
+    <div id="contact">
+      <div class="contact1">Contact</div>
+      <div class="contact2">저와 연락할 이메일을 적어주세요!</div>
+      <div class="phone">Phone</div>
+      <div class="pn">010-1234-5678</div>
+      <div class="email">Email</div>
+      <div class="email1">jungseo1024@gmail.com</div>
+    </div>
+    <div class="input">
+      <div class="header1">Name<br /><input type="inputname" autofocus /></div>
+      <div class="header2">
+        Email <br /><input type="inputemail" autofocus /><br />
+      </div>
+      Message <br />
+      <input type="inputmessage" autofocus />
+      <div class="modal_btn">Submit</div>
+    </div>
+    <div class="modal_background"></div>
+    <div class="modal_wrap">
+      <div class="modal_close">
+        <img class="closeImg" src="./img/458595.png" alt="x버튼" />
+      </div>
+      <div class="text">
+        보내주셔서 감사합니다! <br>빠른 시일 내로 연락드리겠습니다.
+      </div>
+    </div>
+    <div class="footer">
+      <span
+        >Phone
+        <div>010-1234-5678</div></span
+      >
+      <span
+        >Email
+        <div>jungseo1024@gmail.com</div></span
+      >
+      <span
+        >Follow Me
+        <div>insta @10x109</div></span
+      >
+    </div>
+    <span class="last">
+      2023 By Seo&nbsp;Young.<br />jungseo1024@gmail.com</span
+    >
+  </body>
 </html>

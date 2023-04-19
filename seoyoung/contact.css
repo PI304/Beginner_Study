@@ -1,0 +1,133 @@
+#contact {
+  /* border: 1px solid red; */
+  width: auto;
+  height: auto;
+  margin-top: 160px;
+  margin-left: 350px;
+  margin-right: auto;
+}
+#contact .contact1 {
+  font-size: 3.4rem;
+  margin-bottom: 5px;
+  font-weight: 700;
+}
+
+#contact .phone,
+.email {
+  font-weight: 550;
+  font-size: 1.125rem;
+  margin-top: 10px;
+}
+
+#contact .pn,
+.email1,
+.contact2 {
+  font-size: 1rem;
+  font-weight: 300;
+  padding-bottom: 20px;
+  color: rgb(81, 81, 81);
+  margin-top: 5px;
+}
+.input {
+  margin-left: 750px;
+  /* border: 1px solid red; */
+  transform: translateY(-250px);
+  font-size: 1.2rem;
+}
+
+input[type="inputname"] {
+  background-color: rgb(234, 232, 232);
+  border: 0.5px solid rgba(128, 128, 128, 0.44);
+  width: 450px;
+  height: 30px;
+  margin-top: 10px;
+}
+input[type="inputemail"] {
+  background-color: rgb(234, 232, 232);
+  border: 0.5px solid rgba(128, 128, 128, 0.44);
+  width: 450px;
+  height: 30px;
+  margin-top: 10px;
+}
+input[type="inputmessage"] {
+  background-color: rgb(234, 232, 232);
+  border: 0.5px solid rgba(128, 128, 128, 0.44);
+  width: 200px;
+  height: 150px;
+  margin-top: 10px;
+  padding-right: 100px;
+}
+
+.modal_btn {
+  background-color: #b2c7c2;
+  box-shadow: 2px 3px 8px rgba(112, 110, 110, 0.5);
+  border: 0.5px rgba(128, 128, 128, 0.252);
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 130px;
+  height: 130px;
+  font-weight: 550;
+  transform: translateX(330px) translateY(-140px);
+  font-size: 1.375rem;
+  transition: 0.3s;
+  color: rgb(35, 34, 34);
+}
+
+.modal_wrap {
+  display: none;
+  width: 500px;
+  height: 500px;
+  position: absolute;
+  border: 0.5px solid rgba(128, 128, 128, 0.252);
+  top: 50%;
+  left: 50%;
+  margin: -250px 0 0 -250px;
+  background: #eee;
+  z-index: 2;
+  border-radius: 5px; /*요소 모서리 둥글게 */
+}
+.modal_background {
+  display: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.modal_close {
+  width: 26px;
+  height: 26px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.modal_wrap .text {
+  margin-top: 200px;
+  margin-left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(81, 81, 81);
+  font-size: 1.5rem;
+}
+
+.modal_close .closeImg {
+  display: block;
+  width: 60%;
+  height: 60%;
+}
+
+.modal_btn:hover {
+  background-color: #c4d7ce;
+}
+.header1 {
+  margin-bottom: 13px;
+}
+.header2 {
+  margin-bottom: 13px;
+}

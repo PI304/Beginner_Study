@@ -1,50 +1,55 @@
-.iconmom { /*인삿말, 버튼 부모선택자*/
+.iconmom {
+  /*인삿말, 버튼 부모선택자*/
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.iconmom .icon{ /*가운데 이미지*/
+.iconmom .icon {
+  /*가운데 이미지*/
   width: 480px;
   height: 480px;
-  transform: translateX(310px);
+  margin-left: 550px;
   margin-bottom: 200px;
-  }
+  transform: translateX(54px);
+}
 
-.iconmom h1 { /*hello world*/
-  font-size: 80px;
+.iconmom h1 {
+  /*hello world*/
+  font-size: 5rem;
   margin-bottom: 360px;
-  transform: translateX(265px);
+  font-weight: 700;
+  transform: translateX(10px);
 }
 
-.iconmom .text{ /*부제목, 인삿말*/
-  font-weight: 100;
-  transform: translateX(-176px);
-  margin-bottom: 150px;
+.iconmom .text {
+  transform: translateX(-430px) translateY(-75px);
 }
 
-.iconmom .text span{ /*인삿말*/
+.iconmom .text h2 {
+  /*부제목*/
+  text-align: center;
+  margin-top: 100px;
+}
+
+.iconmom .text span {
+  /*소개말*/
   font-weight: 250;
   text-align: left;
-  justify-content: center;
   display: flex;
-  transform: translateY(-12px);
+  transform: translateY(-10px);
 }
 
-.iconmom .text h2 { /*부제목*/
-text-align: center;
-margin-top: 100px;
-}
-
-.iconmom #button { /*전체 버튼*/
+.iconmom #button {
+  /*전체 버튼*/
   font-weight: 500;
-  font-size: 22px;
+  font-size: 1.375rem;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 15px;
   margin-top: 550px;
-  transform: translateX(-510px) translateY(-150px);
+  transform: translateX(-765px) translateY(-150px);
 }
 
 .iconmom #button .button1 {
@@ -53,57 +58,57 @@ margin-top: 100px;
   height: 130px;
   background-color: #99a9a5e3;
   border-radius: 100px; /*요소 모서리 둥글게 */
-  box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+  box-shadow: 2px 3px 8px rgba(112, 110, 110, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
   text-decoration: none;
-  color:rgb(35, 34, 34);
+  color: rgb(35, 34, 34);
 }
 .iconmom #button .button2 {
   border: 0.5px solid rgba(128, 128, 128, 0.363);
   width: 130px;
   height: 130px;
-  background-color: #BCCEC0;
+  background-color: #bccec0;
   border-radius: 100px; /*요소 모서리 둥글게 */
-  box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+  box-shadow: 2px 3px 8px rgba(112, 110, 110, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
   text-decoration: none;
-  color:rgb(35, 34, 34);
+  color: rgb(35, 34, 34);
 }
 .iconmom #button .button3 {
   border: 0.5px solid rgba(128, 128, 128, 0.252);
   width: 130px;
   height: 130px;
-  background-color:#b2c7c2;
+  background-color: #b2c7c2;
   border-radius: 100px; /*요소 모서리 둥글게 */
-  box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+  box-shadow: 2px 3px 8px rgba(112, 110, 110, 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
   transition: 0.3s;
   text-decoration: none;
-  color:rgb(35, 34, 34);
+  color: rgb(35, 34, 34);
 }
 
-
-.iconmom #button .button1:hover{
-  background-color: rgb(212, 207, 181);
+.iconmom #button .button1:hover {
+  background-color: rgb(206, 214, 184);
 }
-.iconmom #button .button2:hover{
-  background-color: rgba(180, 194, 166, 0.859);
+.iconmom #button .button2:hover {
+  background-color: rgba(175, 194, 166, 0.859);
 }
-.iconmom #button .button3:hover{
+.iconmom #button .button3:hover {
   background-color: rgb(212, 213, 199);
 }
 
-.footer { /*밑 전체*/
+.footer {
+  /*밑 전체*/
   font-weight: 550;
-  font-size: 18px;
+  font-size: 1.125rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -114,19 +119,97 @@ margin-top: 100px;
   margin-top: 40px;
 }
 
-.footer div{ /*밑의 값*/
-  font-size: 15px;
+.footer div {
+  /*밑의 값*/
+  font-size: 0.9375rem;
   font-weight: 200;
   display: flex;
   justify-content: left;
   align-items: left;
   margin-top: 8px;
   padding-bottom: 60px;
+  color: rgb(81, 81, 81);
 }
 .last {
-  font-size: 12px;
+  /*이메일*/
+  font-size: 0.75rem;
   font-weight: 100;
   margin-left: 1300px;
   display: flex;
   transform: translateY(-95px);
+}
+
+@media (max-width: 600px) {
+  .iconmom h1 {
+    font-size: 3rem;
+    transform: translateX(-20px);
+  }
+  .iconmom .text {
+    align-items: center;
+    font-size: 0.9rem;
+    margin-left: 150px;
+    transform: translateX(-440px) translateY(-120px);
+  }
+  .iconmom .icon {
+    width: 300px;
+    height: 300px;
+    margin-left: 600px;
+    margin-right: 30px;
+    margin-bottom: 200px;
+    transform: translateX(54px);
+  }
+  .iconmom #button {
+    /*전체 버튼*/
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 450px;
+    transform: translateX(-730px) translateY(-170px);
+  }
+
+  .iconmom #button .button1 {
+    border: 0.5px solid rgba(128, 128, 128, 0.44);
+    width: 100px;
+    height: 100px;
+    background-color: #99a9a5e3;
+    border-radius: 100px; /*요소 모서리 둥글게 */
+    box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(35, 34, 34);
+  }
+  .iconmom #button .button2 {
+    border: 0.5px solid rgba(128, 128, 128, 0.363);
+    width: 100px;
+    height: 100px;
+    background-color: #bccec0;
+    border-radius: 100px; /*요소 모서리 둥글게 */
+    box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(35, 34, 34);
+  }
+  .iconmom #button .button3 {
+    border: 0.5px solid rgba(128, 128, 128, 0.252);
+    width: 100px;
+    height: 100px;
+    background-color: #b2c7c2;
+    border-radius: 100px; /*요소 모서리 둥글게 */
+    box-shadow: 6px 3px 8px rgba(112, 110, 110, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    text-decoration: none;
+    color: rgb(35, 34, 34);
+  }
 }

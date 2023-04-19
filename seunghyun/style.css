@@ -4,6 +4,7 @@
     font-family: 'Chosunilbo_myungjo';
 }
 
+
 @font-face {
     font-family: 'TAEBAEKmilkyway';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/TAEBAEKmilkyway.woff2') format('woff2');
@@ -59,6 +60,14 @@
     margin: 0px 0px 10px 0px;
     /* border: 1px solid gray; */
 }
+
+#date p:after {
+    content: "";
+    display: block;
+    width: 60px;
+    border-bottom: 1px solid #bcbcbc;
+    margin: 20px auto;
+}
 #date
 {
     font-size: 15px;
@@ -84,14 +93,20 @@
 ul {
     display: inline-block;
     padding: 10px;
+    margin-left: 10vh;
 }
 
 .nav li {
     display: inline-block;
-    padding: 10px 30px 10px 30px;
-    
+    padding: 0px 40px 0px 30px;
     
 }
+
+.li span {
+    padding-top: 20px;
+    
+}
+
 
 .blogIcon {
     width: 40px;
@@ -128,25 +143,35 @@ ul {
     height: 100px;
 }
 
+#main {
+    height: 50rem;
+}
 
 #article {
     border-radius: 5px;
     /* border: 1px solid gray; */
-    margin: 20px;
-    text-align: left;
+    margin: 1em;
+    text-align:center;
     height: 600px;
-    position: relative;
+    position: absolute;;
     
 }
 .mainContent {
-    padding: 100px;
+    padding: 2em 5em 2em 5em;
+    margin: 1em;
     position: relative;
+    /* border: 1px solid gray; */
 }
 #intro {
     font-size: 40px;
     text-align: left;
     /* 정렬하고싶다 -> 부모요소 */
-    font-family: ;
+    
+}
+
+#aboutmeintro {
+    text-align: center;
+    /* border: 1px solid gray; */
 }
 
 #subIntro {
@@ -156,34 +181,128 @@ ul {
 
 
 #homeImage {
-
+    /* border: 1px solid gray; */
+    width: 450px;
+    height: 520px;
     margin: 0px 0px 0px 0px;
     float: right;
+    border-radius: 210px 210px 0px 0px;
     position: absolute;
-    top: 10px;
-    left: 800px;
+    top: 40px;
+    left: 1000px;
 }
 
 #homeImage img {
-    width: 380px;
-    height: 460px;
-    margin: 0px;
+    width: 450px;
+    height: 520px;
+    margin: 0px 0px 0px 0px;
     float: right;
     border-radius: 210px 210px 0px 0px;
+
+}
+
+.lalaland img{
+    width: 40rem;
+}
+
+#profileImage {
+    width: 50rem;
+    margin: 0rem 10rem 3rem 10rem;
+    padding: 0 5rem 0 5rem;
+    position:relative;
+    float:none;
+}
+
+#profileImage img{
+    width: 40rem;
+    position:relative;
+    float:none;
+    border-radius: 10rem 10rem 0 0;
 
 }
 
 #description {
     border-radius: 5px;
     /* border: 1px solid gray; */
-    margin: 20px 20px 20px 20px;
+    margin: 20px 30px 20px 0px;
     bottom: 0;
-    height: 200px;
-    width: 95%;
+    padding: 0rem 0rem 0rem 5rem;
+    height: 20vh;
+    width:80vh;
     align-items: center;
     position: absolute ;
 }
+/* 모달 버튼 */
+#modal_btn {
+    background-color: #888686;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    margin: 1rem;
+    border-radius: 2px;
+}
 
+#modal_btn:hover{
+    background:rgb(233, 202, 179);
+}
+
+.modal_content {
+    margin: 12rem 5rem 5rem 5rem;
+}
+
+#modal_intro {
+    font-size: 4vh;
+}
+
+#modal_subIntro {
+    font-size: 1.5vh;
+    
+}
+#modal_left {
+    padding:1vh;
+    float: left;
+}
+
+#modal_right {
+    
+    float: right;
+    text-align: center;
+    bottom: 20vh;
+    right: 3vh;
+    padding-right: 3vh;
+    position: absolute;
+    
+}
+
+.modal_input { 
+    width: 40vh;
+    height: 40vh;
+}
+
+/* #modal_right ul{
+
+    float: right;
+
+    text-align: center;
+} */
+
+#modal_right input{
+    width: 15rem;
+    border: 1px solid #dddddd !important;
+    font-size: 1rem;
+    line-height: 1.45;
+    letter-spacing: -0.04rem;
+    border-radius: 8px;
+    padding: 16px;
+    
+
+
+}
+
+#modal_right li {
+    padding: 1rem;
+    list-style: none;
+}
 
 
 .aside {
@@ -195,11 +314,10 @@ ul {
 
 
 .section {
-    width: 80%;
-    height: 850px;
+    width: 100%;
+    height: 50rem;
     background-color: rgb(240, 245, 250);
     float: left;
-   
 }
 
 .footer {
@@ -219,3 +337,115 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:focus { text-decoration: none; }
 a:hover, a:active { text-decoration: none; }
+
+
+
+/* 모달창 만들기 */
+.modal_wrap{
+    display: none;
+    width: 60rem;
+    height: 40rem;
+    position: absolute;
+    top: rem;
+    bottom: 1rem;
+    left: 20rem;
+    margin: 1rem;
+    background:#d3d2d0;
+    z-index: 2;
+}
+.black_bg{
+    display: none;
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    
+    top:0;
+    left: 0;
+    z-index: 1;
+}
+.modal_close{
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+.modal_close> a{
+    display: block;
+    width: 100%;
+    height: 100%;
+    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+    text-indent: -9999px;
+}
+
+
+/* 메뉴 아이콘 */
+.material-symbols-outlined {
+    font-size:10px;
+}
+
+
+/* 햄버거 아이콘 모션*/
+.menu-trigger {
+    margin-right: 70px;
+    margin-bottom: 50px;
+}
+
+.menu-trigger,
+.menu-trigger .menu-area {
+    display: inline-block;
+    transition: all .4s;
+    box-sizing: border-box;
+}
+
+.menu-trigger {
+    position: relative;
+    width: 50px;
+    height: 44px;
+}
+/* .menu-trigger .menu-area {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 4px;
+  } */
+
+.ham-btn {
+    padding-top: 1vh;
+    left: 50vh;
+    position: relative;
+}
+
+/* dropdown middle */
+
+.dropdown{
+    position: relative;
+    display: inline-block;
+}
+.button{
+    padding: 10px 40px;
+    font-size:16px;
+    background-color: rgb(226, 239, 250);
+    color: rgb(40, 40, 40);
+    border: none;
+
+}
+#drop-content{
+    position: absolute;
+    z-index: 1;
+}
+#drop-content a{
+    display:block;
+    font-size: 1.5vh;
+    background-color: #dfdfdf;
+    color: black;
+    text-decoration: none;
+    padding: 0.5rem 2rem;
+    margin: 2px 0px 0px 0px;
+}
+
+
+

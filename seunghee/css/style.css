@@ -124,6 +124,35 @@ footer {
 #comment > h1 {
   margin-bottom: 28px;
 }
+.modal_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 500px;
+  height: 350px;
+  transform: translateX(-50%) translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border: 5px solid #040403;
+  font-size: 36px;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 16px;
+}
+.modal_container.remove {
+  display: none;
+}
+
 /*반응형*/
 @media screen and (max-width: 800px) {
   .navbar {
@@ -135,10 +164,14 @@ footer {
     flex-direction: column;
     align-items: center;
     width: 100%;
+    display: none;
   }
   .nav_menu li {
     width: 100%;
     text-align: center;
+  }
+  .nav_menu.active {
+    display: flex;
   }
   #article_2 {
     flex-direction: column;
@@ -161,5 +194,16 @@ footer {
     width: 100%;
     margin: 32px 0px;
     text-align: center;
+  }
+  .navbar_toggleBtn {
+    display: block;
+  }
+  .nav_logo_with_toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .modal_container {
+    display: none;
   }
 }

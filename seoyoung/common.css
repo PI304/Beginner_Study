@@ -1,7 +1,7 @@
 body {
-  word-break: keep-all; 
+  word-break: keep-all;
   font-family: "Pretendard Variable", sans-serif;
-  background-color: rgb(234, 232, 232)
+  background-color: rgb(234, 232, 232);
 }
 #header {
   padding-top: 11px;
@@ -13,52 +13,182 @@ body {
   color: rgb(75, 75, 75);
   margin-top: 10px;
 }
-#header a{
-  font-weight: 400;
-  font-size: 16px;
+
+#header .menu {
+  margin-left: 800px;
   margin-top: 10px;
-  text-decoration: none;
-  color: rgb(75, 75, 75);
+  align-items: center;
+  display: flex;
+  gap: 50px;
 }
 
-#header .nav { /*seoyoung*/
-  font-size: 18px;
+#header .menu a,
+button {
+  text-decoration-line: none;
+  font-weight: 450;
+  font-size: 1rem;
+  margin-top: 10px;
+  color: rgb(75, 75, 75);
+  transition: 0.3s;
+}
+
+#header .nav {
+  /*seoyoung*/
+  font-size: 1.125rem;
   font-weight: 700;
   margin-left: 4px;
   margin-top: 10px;
+  text-decoration-line: none;
+  color: rgb(75, 75, 75);
 }
 
-#header .menu1 {
+#header .menu .dropdown {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#header .menu .dropdown .menu1 {
+  border: 0;
+  outline: 0;
+  background-color: rgb(234, 232, 232);
+  font-family: "Pretendard Variable", sans-serif;
+}
+
+#header .menu .dropdownmenu {
+  background-color: #d1d1d1a4;
+  border-radius: 2%;
+  width: 100px;
+  flex-direction: column;
+  color: rgba(94, 94, 94, 0.834);
+  transition: 0.3s;
+}
+
+#header .menu .dropdownmenu div:hover {
+  background-color: #f6fdfca4;
+  border-radius: 2%;
+  width: 100px;
   display: flex;
-  margin-left: 1050px;
-  margin-top: 10px;
-
-}
-#header .menu2 {
-  display: flex;
-  margin-left: 20px;
-  margin-top: 10px;
-}
-#header .menu3 {
-  display: flex;
-  margin-left: 20px;
-  margin-top: 10px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
-a.menu1:hover{
-  color: rgb(134, 134, 134);
+#header .menu .menu1:hover {
+  color: #99a9a5e3;
 }
 
-a.menu2:hover{
-  color: rgb(134, 134, 134);
-  }
+#header .menu .menu2:hover {
+  color: #99a9a5e3;
+}
 
-a.menu3:hover{
-  color: rgb(134, 134, 134);
-  }
+#header .menu .menu3:hover {
+  color: #99a9a5e3;
+}
 
-  img {
+img {
   width: 40px;
   height: 40px;
-  margin-left: 40px;
+  margin-left: 55px;
+}
+.footer {
+  /*밑 전체*/
+  font-weight: 550;
+  font-size: 1.125rem;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 330px;
+  border-top: 0.1px solid rgba(172, 172, 172, 0.748);
+  padding-top: 30px;
+  padding-left: 30px;
+  margin-top: 40px;
+}
+
+.footer div {
+  /*밑의 값*/
+  font-size: 0.9375rem;
+  font-weight: 200;
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-top: 8px;
+  padding-bottom: 60px;
+  color: rgb(81, 81, 81);
+}
+.last {
+  /*이메일*/
+  font-size: 0.75rem;
+  font-weight: 100;
+  margin-left: 1300px;
+  display: flex;
+  transform: translateY(-95px);
+}
+
+@media (max-width: 1160px) {
+  #header .menu {
+    margin-left: 700px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+  }
+}
+@media (max-width: 600px) {
+  #header .menu {
+    margin-left: 200px;
+    margin-top: 10px;
+    align-items: center;
+    display: flex;
+  }
+  #header .menu a {
+    text-decoration-line: none;
+    font-weight: 450;
+    font-size: 0.8rem;
+    margin-top: 10px;
+    color: rgb(75, 75, 75);
+    margin-left: 6px;
+  }
+
+  #header .nav {
+    /*seoyoung*/
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-left: 4px;
+    margin-top: 10px;
+    text-decoration-line: none;
+    color: rgb(75, 75, 75);
+  }
+
+  .footer {
+    /*밑 전체*/
+    font-weight: 550;
+    font-size: 0.9rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 30px;
+    border-top: 0.1px solid rgba(172, 172, 172, 0.748);
+    padding-top: 30px;
+    padding-left: 10px;
+    margin-top: 40px;
+  }
+
+  .footer div {
+    /*밑의 값*/
+    font-size: 0.75rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin-top: 8px;
+    padding-bottom: 60px;
+    color: rgb(81, 81, 81);
+  }
+  .last {
+    /*이메일*/
+    font-size: 0.1rem;
+    font-weight: 100;
+    margin-left: 380px;
+    transform: translateY(-90px);
+  }
 }

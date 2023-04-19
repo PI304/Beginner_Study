@@ -73,7 +73,7 @@ MyPage를 작업 하기 전에 브랜치 생성을 해줍니다
 // 아래 명령어를 통해 브랜치 생성
 $ git checkout -b Week?/기능요약
 ```
-**브랜치 이름 컨벤션에 대해선 아래  5.[브랜치 이름 컨벤션](##5.-브랜치-이름-컨벤션)을 참고해주세요**
+*브랜치 이름 컨벤션에 대해선 아래  5.[브랜치 이름 컨벤션](##5.-브랜치-이름-컨벤션)을 참고해주세요*
 
 ### 3. 작업 후 push
 
@@ -82,6 +82,8 @@ $ git push origin [브랜치명]
 ```
 
 ### 4. Github에서 PR을 생성합니다. PR 시 나타나는 템플릿을 채워주세요.
+
+**반드시 PR 시 템플릿 위에는 브랜치 이름을 적어주세요**
 
 ```markdown
 ## Feature Description
@@ -93,8 +95,7 @@ $ git push origin [브랜치명]
 - 이런 이런 점을 유의해주세요
 ```
 아래 예시를 참고해주세요
-<img width="920" alt="스크린샷 2023-04-05 23 42 48" src="https://user-images.githubusercontent.com/110515401/230116422-6631dd1a-19b7-414d-b143-3521a4765b25.png">
-
+<img width="919" alt="스크린샷 2023-04-18 23 19 02" src="https://user-images.githubusercontent.com/110515401/232806371-b9a2bc4e-e03c-41ed-b61a-94310c598ee7.png">
 
 
 ### 5. Review 과정을 거칩니다.
@@ -117,7 +118,7 @@ $ git push origin [브랜치명]
 <img width="846" alt="스크린샷 2023-04-05 23 56 11" src="https://user-images.githubusercontent.com/110515401/230120382-3073d734-5675-4ee6-af1f-b39a1909fe77.png">
 
 
-### 7. 로컬에서 master 브랜치로 체크아웃한 뒤 Pull하고, 새로운 브랜치로 분기하여 다음 작업을 진행해주세요.
+### 7.merge한 후 로컬에서 master 브랜치로 체크아웃한 뒤 Pull하고, 새로운 브랜치로 분기하여 다음 작업을 진행해주세요.
 
 ```shell
 $ git checkout master
@@ -133,7 +134,8 @@ $ git checkout -b Week?/
 $ git branch
 
 // 브랜치 삭제
-$ git branch -d 
+$ git branch -d 삭제하고싶은브랜치이름
+$ git branch -D 삭제하고싶은브랜치이름
 ```
 
 

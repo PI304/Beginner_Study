@@ -134,7 +134,8 @@ $ git checkout -b Week?/
 $ git branch
 
 // 브랜치 삭제
-$ git branch -d 
+$ git branch -d 삭제하고싶은브랜치이름
+$ git branch -D 삭제하고싶은브랜치이름
 ```
 
 

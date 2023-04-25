@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Chosunilbo_myungjo';
+
 }
 
 
@@ -11,6 +12,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'Chosunilbo_myungjo';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Chosunilbo_myungjo.woff') format('woff');
@@ -23,37 +25,40 @@
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.0/116watermelon.woff') format('woff');
     font-weight: normal;
     font-style: normal;
-    }
+}
 
 @font-face {
-        font-family: 'EF_Rebecca';
-        src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_Rebecca.woff2') format('woff2');
-        font-weight: normal;
-        font-style: normal;
-    }
+    font-family: 'EF_Rebecca';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2210-EF@1.0/EF_Rebecca.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 
 .header {
     width: 100%;
     height: 100px;
+    padding: 5vh 0vh 0vh 0vh;
+    ;
     color: rgb(39, 38, 38);
-    background-color: rgb(253, 255, 255);
+    background-color: #fcfcfa;
 
 }
+
 #blogname {
     font-size: 40px;
-    margin: 40px 0px 0px 40px;
+    margin: 0px 0px 0px 40px;
     text-align: center;
+    background-color: #fcfcfa;
 }
 
-#menuName
-{
+#menuName {
     font-size: 20px;
     margin: 0px 0px 10px 0px;
     text-align: left;
     /* border: 1px solid gray; */
 }
-#contentName
-{
+
+#contentName {
     font-size: 30px;
     margin: 0px;
     text-align: left;
@@ -68,8 +73,8 @@
     border-bottom: 1px solid #bcbcbc;
     margin: 20px auto;
 }
-#date
-{
+
+#date {
     font-size: 15px;
     margin: 0px;
     text-align: left;
@@ -84,7 +89,7 @@
     width: 100%;
     height: 60px;
     color: rgb(61, 69, 75);
-    background-color: rgb(226, 239, 250);
+    background-color: #fcfcfa;
     text-align: center;
 
 
@@ -99,12 +104,12 @@ ul {
 .nav li {
     display: inline-block;
     padding: 0px 40px 0px 30px;
-    
+
 }
 
 .li span {
     padding-top: 20px;
-    
+
 }
 
 
@@ -113,6 +118,7 @@ ul {
     padding: 10px 5px 5px 15px;
     float: left;
 }
+
 #menuList {
     list-style: none;
     font-size: 15px;
@@ -134,7 +140,7 @@ ul {
     border-radius: 5px;
     /* border: 1px solid gray; */
     margin: 10px;
-    }
+}
 
 #title {
     border-radius: 5px;
@@ -151,22 +157,24 @@ ul {
     border-radius: 5px;
     /* border: 1px solid gray; */
     margin: 1em;
-    text-align:center;
+    text-align: center;
     height: 600px;
-    position: absolute;;
-    
+
 }
+
 .mainContent {
-    padding: 2em 5em 2em 5em;
+    padding: 2em 6em 2em 6em;
     margin: 1em;
     position: relative;
+    text-align: left;
     /* border: 1px solid gray; */
 }
+
 #intro {
     font-size: 40px;
     text-align: left;
     /* 정렬하고싶다 -> 부모요소 */
-    
+
 }
 
 #aboutmeintro {
@@ -187,7 +195,6 @@ ul {
     margin: 0px 0px 0px 0px;
     float: right;
     border-radius: 210px 210px 0px 0px;
-    position: absolute;
     top: 40px;
     left: 1000px;
 }
@@ -201,25 +208,38 @@ ul {
 
 }
 
-.lalaland img{
+.lalaland img {
     width: 40rem;
 }
 
 #profileImage {
-    width: 50rem;
-    margin: 0rem 10rem 3rem 10rem;
-    padding: 0 5rem 0 5rem;
-    position:relative;
-    float:none;
+    width: 30rem;
+    margin: 0rem 10rem 0rem 10rem;
+    padding: 0 10rem 0 10rem;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-width: 100%;
+    display: flex;
+    /* 가운데 정렬을 위한 flex 속성 추가 */
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+
 }
 
-#profileImage img{
-    width: 40rem;
-    position:relative;
-    float:none;
-    border-radius: 10rem 10rem 0 0;
-
+#profileImage img {
+    display: block;
+    width: 120%;
+    height: 50%;
+    object-fit: cover;
+    border-radius: 10rem 10rem 0rem 0rem;
+    margin: auto;
+    /* 이미지를 가운데 정렬하기 위한 margin 속성 추가 */
 }
+
 
 #description {
     border-radius: 5px;
@@ -228,22 +248,38 @@ ul {
     bottom: 0;
     padding: 0rem 0rem 0rem 5rem;
     height: 20vh;
-    width:80vh;
+
     align-items: center;
-    position: absolute ;
+    text-align: center;
+
 }
+
+.text {
+    align-items: center;
+    text-align: center;
+}
+
+.profile {
+    text-align: left;
+    margin: 3vh;
+}
+
 /* 모달 버튼 */
 #modal_btn {
     background-color: #888686;
     width: 10rem;
     height: 3rem;
     border: none;
-    margin: 1rem;
+    margin: 2rem;
+    left: 8rem;
     border-radius: 2px;
+    position: absolute;
 }
 
-#modal_btn:hover{
-    background:rgb(233, 202, 179);
+
+#modal_btn:hover {
+    background: rgb(233, 202, 179);
+
 }
 
 .modal_content {
@@ -252,41 +288,41 @@ ul {
 
 #modal_intro {
     font-size: 4vh;
+    background: #d3d2d0;
 }
 
 #modal_subIntro {
     font-size: 1.5vh;
-    
+    background: #d3d2d0;
+
 }
+
 #modal_left {
-    padding:1vh;
+    padding: 1vh;
     float: left;
+    background: #d3d2d0;
 }
 
 #modal_right {
-    
+    background: #d3d2d0;
     float: right;
     text-align: center;
-    bottom: 20vh;
-    right: 3vh;
-    padding-right: 3vh;
+    bottom: 12vh;
+    right: 5vh;
+    padding-right: 10vh;
     position: absolute;
-    
+
 }
 
-.modal_input { 
+.modal_input {
     width: 40vh;
     height: 40vh;
+    background: #d3d2d0;
+
 }
 
-/* #modal_right ul{
 
-    float: right;
-
-    text-align: center;
-} */
-
-#modal_right input{
+#modal_right input {
     width: 15rem;
     border: 1px solid #dddddd !important;
     font-size: 1rem;
@@ -294,21 +330,24 @@ ul {
     letter-spacing: -0.04rem;
     border-radius: 8px;
     padding: 16px;
-    
-
-
+    background-color: rgb(254, 253, 246);
 }
+
+
 
 #modal_right li {
     padding: 1rem;
     list-style: none;
 }
 
+#modal_right ul {
+    background: #d3d2d0;
+}
 
 .aside {
     width: 20%;
     height: 850px;
-    background-color: rgb(220, 221, 224);
+    background-color: #fcfcfa;
     float: right;
 }
 
@@ -316,14 +355,14 @@ ul {
 .section {
     width: 100%;
     height: 50rem;
-    background-color: rgb(240, 245, 250);
+    background-color: #fcfcfa;
     float: left;
 }
 
 .footer {
     width: 100%;
     height: 50px;
-    background-color: rgb(236, 236, 236);
+    background-color: #fcfcfa;
     float: left;
 }
 
@@ -332,16 +371,32 @@ ul {
 }
 
 /* 보라색 태그 없애기 */
-a { text-decoration: none; color: black; }
-a:visited { text-decoration: none; }
-a:hover { text-decoration: none; }
-a:focus { text-decoration: none; }
-a:hover, a:active { text-decoration: none; }
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+a:hover,
+a:active {
+    text-decoration: none;
+}
 
 
 
 /* 모달창 만들기 */
-.modal_wrap{
+.modal_wrap {
     display: none;
     width: 60rem;
     height: 40rem;
@@ -350,97 +405,71 @@ a:hover, a:active { text-decoration: none; }
     bottom: 1rem;
     left: 20rem;
     margin: 1rem;
-    background:#d3d2d0;
+    background: #d3d2d0;
     z-index: 2;
 }
-.black_bg{
+
+.black_bg {
     display: none;
     position: absolute;
     content: "";
     width: 100%;
     height: 100%;
-    
-    top:0;
+
+    top: 0;
     left: 0;
     z-index: 1;
 }
-.modal_close{
+
+.modal_close {
     width: 26px;
     height: 26px;
     position: absolute;
     top: -30px;
     right: 0;
 }
-.modal_close> a{
+
+.modal_close>a {
     display: block;
     width: 100%;
     height: 100%;
-    background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+    background: url(https://img.icons8.com/metro/26/000000/close-window.png);
     text-indent: -9999px;
 }
 
 
 /* 메뉴 아이콘 */
 .material-symbols-outlined {
-    font-size:10px;
+    font-size: 10px;
 }
 
 
-/* 햄버거 아이콘 모션*/
-.menu-trigger {
-    margin-right: 70px;
-    margin-bottom: 50px;
-}
-
-.menu-trigger,
-.menu-trigger .menu-area {
-    display: inline-block;
-    transition: all .4s;
-    box-sizing: border-box;
-}
-
-.menu-trigger {
-    position: relative;
-    width: 50px;
-    height: 44px;
-}
-/* .menu-trigger .menu-area {
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 4px;
-    background-color: #fff;
-    border-radius: 4px;
-  } */
-
-.ham-btn {
-    padding-top: 1vh;
-    left: 50vh;
-    position: relative;
-}
 
 /* dropdown middle */
 
-.dropdown{
+.dropdown {
     position: relative;
     display: inline-block;
 }
-.button{
+
+.button {
     padding: 10px 40px;
-    font-size:16px;
-    background-color: rgb(226, 239, 250);
+    font-size: 16px;
+    background-color: #fcfcfa;
     color: rgb(40, 40, 40);
     border: none;
 
 }
-#drop-content{
+
+#drop-content {
     position: absolute;
     z-index: 1;
 }
-#drop-content a{
-    display:block;
+
+#drop-content a {
+    display: block;
     font-size: 1.5vh;
-    background-color: #dfdfdf;
+    background-color: #f2eeeb;
     color: black;
     text-decoration: none;
     padding: 0.5rem 2rem;
@@ -449,3 +478,199 @@ a:hover, a:active { text-decoration: none; }
 
 
 
+/* 스텝퍼 */
+
+.countBox {
+    position: fixed;
+    top: 50%;
+    left: 75%;
+    /* transform: translate(-50%,-50%); */
+    padding: 20px 50px;
+    box-sizing: border-box;
+    background-color: #f9e1da;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px #fed2d2;
+    width: 100%;
+    max-width: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.countBox h1 {
+    color: #ffffff;
+    font-size: 20px;
+}
+
+button {
+    border: 0;
+    background-color: transparent;
+}
+
+.countNumber {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin: 10px 0;
+}
+
+.countButtonWrap>button {
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: #e78d8d;
+    padding: 5px 10px;
+}
+
+/* 햄버거 버튼 */
+.ham-btn {
+    display: flex;
+    align-items: center;
+
+}
+
+.menu-area {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    /* width: 200px; */
+    height: 100%;
+    overflow-y: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-out;
+}
+
+.menu-area.open {
+    transform: translateX(0%);
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #fff;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+.menu-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+}
+
+.gray-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9998;
+    background-color: rgba(156, 154, 154, 0.5);
+    display: none;
+}
+
+.gray-bg.show {
+    display: block;
+    opacity: 1;
+    z-index: 99;
+}
+
+/* 아코디언 */
+
+#wrapper {
+    margin: 5%;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.acc-container {
+    width: 100%;
+    max-width: 30rem;
+    padding: 2rem;
+    margin: 3rem auto;
+    background: hsl(0, 0%, 14%);
+    border-radius: 1rem;
+    border: 1px solid #222;
+    box-shadow: 0px 0px 34px -8px rgba(0, 0, 0, 0.55);
+}
+
+
+.accordion {
+    background-color: #333;
+    color: #eee;
+    cursor: pointer;
+    padding: 1rem;
+    width: 100%;
+    border: 1px solid #bea4a4;
+    text-align: left;
+    outline: none;
+    font-size: 1rem;
+    transition: all 0.4s ease-out;
+    box-shadow: 0px 0px 2px -1px rgba(204, 201, 201, 0.75);
+}
+
+.accordion:first-child {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.accordion:nth-last-child(1) {
+    border-radius: 0 0 1rem 1rem;
+}
+
+.accordion:nth-last-child(1):hover {
+    background: crimson;
+}
+
+.active,
+.accordion:hover {
+    background-color: #9b6c65;
+}
+
+.accordion:after {
+    content: "\002B";
+    color: #eee;
+    font-weight: bold;
+    float: right;
+    margin-left: 0.5rem;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.accordion-content {
+    padding: 0 1rem;
+    background-color: #c9b6b6;
+    color: #e7e7e7;
+    max-height: 0rem;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+.accordion-content ul {
+    list-style-type: circle;
+    margin: 0rem 0;
+    padding: 0.1rem;
+    /* max-height: 20rem; */
+    white-space: pre-wrap;
+    text-align: center;
+}
+
+.accordion-content ul li {
+    padding: 0.1rem 0;
+    display: inline-block;
+}

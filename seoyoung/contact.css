@@ -103,7 +103,7 @@ input[type="inputmessage"] {
   height: 26px;
   position: absolute;
   top: 10px;
-  right: 10px;
+  margin-left: 417px;
 }
 
 .modal_wrap .text {

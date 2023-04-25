@@ -5,6 +5,8 @@
     <title>About me</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/toggle.js" defer></script>
+    <script src="js/accordion.js" defer></script>
+    <script src="js/stepper.js" defer></script>
   </head>
   <body>
     <header>
@@ -25,7 +27,74 @@
         </ul>
       </nav>
     </header>
-    <section></section>
+    <section id="accordion_container">
+      <h1>Projects</h1>
+      <button class="accordion">WEB (2021, html+css+js)</button>
+      <div class="accordion_panel">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/URMCxBKzs9s"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <button class="accordion">APP (2021, react native+typescript)</button>
+      <div class="accordion_panel">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/1BEFc0K3bOU"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <a href="https://github.com/051hui/BMDS">Check GitHub URL </a>
+      </div>
+
+      <button class="accordion">
+        Sookmyung Software Hackathon (2022, html+css+js)
+      </button>
+      <div class="accordion_panel">
+        <a href="https://github.com/Sookmyung-Software-Hackathon/Team13"
+          >Check GitHub URL
+        </a>
+      </div>
+
+      <button class="accordion">
+        Maplestory Worlds Hackathon (2022, luascript)
+      </button>
+      <div class="accordion_panel">
+        <iframe
+          width="329"
+          height="586"
+          src="https://www.youtube.com/embed/-DEXq78jl60"
+          title="(공감주의) 지하철에서 갑자기 똥이 마려울 때...! #shorts"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+        <a
+          href="https://maplestoryworlds.nexon.com/play/aa8b98d03f4b4624a417ebeeaf5276ac"
+          >Play Link
+        </a>
+      </div>
+    </section>
+    <section id="rate">
+      <h1>Rate from 1 to 10:</h1>
+      <div class="stepper_container">
+        <div class="stepper">
+          <button class="minus stepper_btn">-</button>
+          <div class="range">10</div>
+          <button class="plus stepper_btn">+</button>
+        </div>
+        <button class="submit_btn">Submit</button>
+      </div>
+    </section>
     <footer>
       <div>sheekang30302@gmail.com</div>
       <a href=""

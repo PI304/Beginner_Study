@@ -15,63 +15,75 @@
 //     modal.style.display = "none";
 //     document.body.style.overflow = "auto";
 // });
-// 모달창
-
-
-// 메뉴 햄버거 아이콘 
-var burger = $('.menu-trigger');
-
-burger.each(function(index){
-  var $this = $(this);
+  // 햄버거 버튼 클릭 이벤트 처리
+  const hamBtn = document.querySelector('.ham-btn');
+  const menuArea = document.querySelector('.menu-area');
+  const closeBtn = document.querySelector('.close-btn');
+  const grayBg = document.querySelector('.gray-bg');
   
-  $this.on('click', function(e){
-    e.preventDefault();
-    $(this).toggleClass('active-' + (index+1));
-  })
-});
+  hamBtn.addEventListener('click', () => {
+    menuArea.classList.add('open');
+    grayBg.classList.add('show');
+  });
+  
+  closeBtn.addEventListener('click', () => {
+    menuArea.classList.remove('open');
+    grayBg.classList.remove('show');
+  });
+  
+  grayBg.addEventListener('click', () => {
+    menuArea.classList.remove('open');
+    grayBg.classList.remove('show');
+  });
 
-// 햄버거 버튼 클릭 이벤트 
-var burger = $('.menu-trigger');
+// 모달창
+window.onload = function () {
 
-burger.each(function (index) {
-  var $this = $(this);
-
-  $this.on('click', function (e) {
-    e.preventDefault();
-    $(this).toggleClass('active-' + (index + 1));
-  })
-});
-
-var h = 0;
-
-$(burger).on("click", function () {
-  if (h == 0) {
-    $('.ham-con').animate({
-      right: '0',
-      opacity: 1
-    }, 500);
-    $(this).addClass('active-1');
-    h++;
-  } else if (h == 1) {
-    $('.ham-con').animate({
-      right: '-20%',
-      opacity: 0
-    }, 500);
-    $(this).removeClass('active-1');
-    h--;
+  function onClick() {
+      document
+          .querySelector('.modal_wrap')
+          .style
+          .display = 'block';
+      document
+          .querySelector('.black_bg')
+          .style
+          .display = 'block';
   }
-  $(window).scroll(function() {
-    sct = $(window).scrollTop();
-    if(sct>30){
-      $('.ham-con').css({
-        opacity: 0,
-        right :'-20%'
-      }, 500);
-      $(burger).removeClass('active-1');
-      h=0;
+  function offClick() {
+      document
+          .querySelector('.modal_wrap')
+          .style
+          .display = 'none';
+      document
+          .querySelector('.black_bg')
+          .style
+          .display = 'none';
+  }
+
+  document
+      .getElementById('modal_btn')
+      .addEventListener('click', onClick);
+  document
+      .querySelector('.modal_close')
+      .addEventListener('click', offClick);
+
+};
+
+//아코디언
+let acc = document.querySelectorAll(".accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   });
-})
+}
 
 // 중간 드롭다운 
 function dp_menu() {
@@ -87,3 +99,29 @@ function dp_menu() {
 
 
 
+// 스텝퍼
+
+let countNum = document.querySelector(".countNumber");
+let buttonWrap = document.querySelector(".countButtonWrap");
+
+buttonWrap.addEventListener("click", (a) => {
+    if (a.target.classList.contains("plus")) {
+        countNum.innerHTML++;
+        //증가
+    }
+    if (a.target.classList.contains("minus")) {
+        countNum.innerHTML--;
+        //감소
+    }
+    if (a.target.classList.contains("reset")) {
+        countNum.innerHTML = 0;
+        //리셋
+    }
+    
+    //음수일 경우 색상 변경
+    if (countNum.innerHTML < 0) {
+        countNum.style.color = "#f66555"
+    } else {
+        countNum.style.color = "#ffffff"
+    }
+});

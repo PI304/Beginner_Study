@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
@@ -7,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My blog</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="javascript" href="main.js">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -25,10 +25,10 @@
             <img src="https://cdn-icons-png.flaticon.com/512/185/185801.png" class="blogIcon">
             <ul>
                 <li>
-                    <a href="#" onclick="location.href='index.html'">Home</a>
+                    <a href="index.html">Home</a>
                 </li>
                 <li>
-                    <a href="#" onclick="location.href='profile.html'">Profile</a>
+                    <a href="profile.html">Profile</a>
                 </li>
                 <div class="dropdown">
                     <button onclick="dp_menu()" class="button">Blog</button>
@@ -38,23 +38,20 @@
                         <a href="blog.html">Study</a>
                     </div>
                 </div>
-                    <li>
-                        <a href="#" onclick="location.href='project.html'">Project</a>
-                    </li>
-                        
-                    <li>
-                        <a href="#" onclick="location.href='contact.html'">Contact</a>
-                    </li>
-                
-                <!-- <li>
-                    <span class="material-symbols-outlined">
-                        menu
-                    </span>
-                </li> -->
+                <li>
+                    <a href="project.html">Project</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+
+
                 <!-- 햄버거 버튼 -->
                 <li class="ham-btn">
                     <a class="menu-trigger" href="#">
-                        <div class="menu-area">
+                        <div class="menu-icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                                 class="bi bi-list" viewBox="0 0 16 16">
                                 <path fill-rule="evenodd"
@@ -64,58 +61,107 @@
                     </a>
                 </li>
             </ul>
-        </div>
-    </div>
+            </nav>
 
-    <div class="section">
-        <div class="content">
-            <div id="title">
-                <div id="menuName">
-                    <p>Profile</p>
-                </div>
-                <div id="contentName">
-                    <h3>About Me</h3>
-                </div>
-                <div id="date">
-                    <p></p>
+            <div class="menu-area">
+                <a class="close-btn" href="#">X</a>
+                <div class="menu-content">
+                    <!-- 아코디언 -->
+
+                    <section id="wrapper">
+                        <div class="acc-container">
+                            <button class="accordion">Programming</button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="blog.html">HTML / CSS Basic</a></li>
+                                    <li><a href="blog.html">JAVASCRIPT</a></li>
+                                </ul>
+                            </div>
+
+                            <button class="accordion">Algorithm</button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="#">Dynamic Programming</a></li>
+                                </ul>
+                            </div>
+
+                            <button class="accordion">Design</button>
+                            <div class="accordion-content">
+                                <ul>
+                                    <li><a href="project.html">UI/UX design</a></li>
+                                    <li><a href="#">Figma Tutorial</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </section>
                 </div>
             </div>
-            <div id="article">
-                
-                
-                <div id="aboutmeintro">
-                    <span>My aunt used to live in Paris
-                    <br>
-                    I remember, she used to come home and tell us these stories about being abroad
-                    <br>
-                    And I remember she told us that she jumped into the river once, barefoot
-                </span>
-                </div>
-                <div class="mainContent">  
-                    <div class="mainImage">
-                        <div id="profileImage">
-                            <img src="https://t3.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7vrw/image/_j76DdiawBscntQjSRQiluddNlM.jpg">
+            <div class="gray-bg"></div>
+        </div>
+
+        <div id="main">
+            <div class="section">
+                <div class="content">
+                    <div id="title">
+                        <div id="menuName">
+                            <p>Profile</p>
+                        </div>
+                        <div id="contentName">
+                            <h3>About Me</h3>
+                        </div>
+                        <div id="date">
+                            <p></p>
                         </div>
                     </div>
-                    
-                    <br><br>
-                    <span id="subIntro">
-                        “No, maybe I’m not. Maybe I’m one of those people that has always wanted to do it, but it’s
-                        like a pipe dream for me. You know, and then you, you said it. You change your dreams and
-                        then you grow up. Maybe I’m one of those people and I’m not supposed to. And I can go back
-                        to school and I can find something else that I’m supposed to do. ‘Cause i left to do that.
-                        And its been six years and I dont want to do it anymore.”
-                        <br>
-                    </span>
-                </div>
+                    <div id="article">
 
-                <div id="description">
+
+                        <div id="aboutmeintro">
+                            <span>My aunt used to live in Paris
+                                <br>
+                                I remember, she used to come home and tell us these stories about being abroad
+                                <br>
+                                And I remember she told us that she jumped into the river once, barefoot
+                            </span>
+                        </div>
+                        <div class="mainContent">
+                            <div class="mainImage">
+                                <div id="profileImage">
+                                    <img
+                                        src="https://t3.daumcdn.net/thumb/R720x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7vrw/image/_j76DdiawBscntQjSRQiluddNlM.jpg">
+                                </div>
+                            </div>
+
+                            <br><br>
+                            <span id="subIntro">
+                                “No, maybe I’m not. Maybe I’m one of those people that has always wanted to do it, but
+                                it’s
+                                like a pipe dream for me. You know, and then you, you said it. You change your dreams
+                                and
+                                then you grow up. Maybe I’m one of those people and I’m not supposed to. And I can go
+                                back
+                                to school and I can find something else that I’m supposed to do. ‘Cause i left to do
+                                that.
+                                And its been six years and I dont want to do it anymore.”
+                                <br>
+                            </span>
+                        </div>
+
+                        <!-- <div id="description">
                     <span></span>
+                </div> -->
+                        <hr class="line">
+                        <div class="profile">
+                            <br>
+                            <h2>Education</h2>
+                            <br>
+                            <p>Sookmyung Girl's high school</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="ham-con">
+            <!-- <div class="ham-con">
         <div id="ham-menu-wrap">
             <div class="ham-menu mt-5">
                 <ul class="ham-top-menu">
@@ -135,7 +181,7 @@
                         <li><a href="/board/category/13?page=0">DP</a></li>
                     </ul>
                 </li>
-            </ul>
+            </ul> -->
 
             <!-- <ul>
                 <div id="menuList">Programming</div>
@@ -156,31 +202,10 @@
     <!-- footer 시작-->
     <div class="footer">
         <div id="footerContent">
-            Made By Kate
+            Copyright 2023. kate. All Rights Reserved
         </div>
     </div>
-    <!-- jquery 시작-->
-    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $("#nav ul.sub").hide();
-            $("#nav ul.menu li").click(function () {
-                $("ul", this).slideToggle("fast");
-            });
-        });
-        
-                function dp_menu(){
-            let click = document.getElementById("drop-content");
-            if(click.style.display === "none"){
-                click.style.display = "block";
-
-            }else{
-                click.style.display = "none";
-
-            }
-        }
-        
-    </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

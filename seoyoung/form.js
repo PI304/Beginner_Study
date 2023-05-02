@@ -13,8 +13,3 @@ function modalClose() {
 //버튼 클릭리스너 달기
 document.querySelector('.modal_btn').addEventListener('click', modalOpen);
 document.querySelector('.modal_close').addEventListener('click', modalClose);
-
-//툴팁 달기
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();
-});

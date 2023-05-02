@@ -1,3 +1,11 @@
+@import "./reset.css";
+
+
+body{
+  width: 1536px;
+  height: 540px;
+}
+
 body {
   word-break: keep-all;
   font-family: "Pretendard Variable", sans-serif;
@@ -12,18 +20,18 @@ body {
   align-items: center;
   color: rgb(75, 75, 75);
   margin-top: 10px;
+  gap: 800px;
 }
 
-#header .menu {
-  margin-left: 800px;
+#header #menu {
   margin-top: 10px;
   align-items: center;
   display: flex;
   gap: 50px;
 }
 
-#header .menu a,
-button {
+#header #menu a,
+.button {
   text-decoration-line: none;
   font-weight: 450;
   font-size: 1rem;
@@ -32,64 +40,31 @@ button {
   transition: 0.3s;
 }
 
-#header .nav {
+#header .log .nav {
   /*seoyoung*/
   font-size: 1.125rem;
   font-weight: 700;
-  margin-left: 4px;
-  margin-top: 10px;
-  text-decoration-line: none;
   color: rgb(75, 75, 75);
 }
 
-#header .menu .dropdown {
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-#header .menu .dropdown .menu1 {
-  border: 0;
-  outline: 0;
-  background-color: rgb(234, 232, 232);
-  font-family: "Pretendard Variable", sans-serif;
-}
-
-#header .menu .dropdownmenu {
-  background-color: #d1d1d1a4;
-  border-radius: 2%;
-  width: 100px;
-  flex-direction: column;
-  color: rgba(94, 94, 94, 0.834);
-  transition: 0.3s;
-}
-
-#header .menu .dropdownmenu div:hover {
-  background-color: #f6fdfca4;
-  border-radius: 2%;
-  width: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-#header .menu .menu1:hover {
+#header #menu .menu1:hover {
   color: #99a9a5e3;
 }
 
-#header .menu .menu2:hover {
+#header #menu .menu2:hover {
   color: #99a9a5e3;
 }
 
-#header .menu .menu3:hover {
+#header #menu .menu3:hover {
   color: #99a9a5e3;
 }
 
-img {
+.log img {
   width: 40px;
   height: 40px;
   margin-left: 55px;
+  margin-top: 10px;
 }
 .footer {
   /*밑 전체*/
@@ -126,7 +101,7 @@ img {
 }
 
 @media (max-width: 1160px) {
-  #header .menu {
+  #header #menu {
     margin-left: 700px;
     margin-top: 10px;
     align-items: center;
@@ -134,13 +109,13 @@ img {
   }
 }
 @media (max-width: 600px) {
-  #header .menu {
+  #header #menu {
     margin-left: 200px;
     margin-top: 10px;
     align-items: center;
     display: flex;
   }
-  #header .menu a {
+  #header #menu a {
     text-decoration-line: none;
     font-weight: 450;
     font-size: 0.8rem;
@@ -149,7 +124,7 @@ img {
     margin-left: 6px;
   }
 
-  #header .nav {
+  #header #log .nav {
     /*seoyoung*/
     font-size: 0.9rem;
     font-weight: 700;

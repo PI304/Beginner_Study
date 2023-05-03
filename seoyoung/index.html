@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=1200" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./common.css" />
     <link
@@ -22,15 +23,19 @@
   </head>
   <body>
     <div id="header">
-      <img src="./img/seoyoung1.png" />
-      <a href="./index.html" class="nav">SeoYoung</a>
-      <div class="menu">
+      <div class="log">
+        <img src="./img/seoyoung1.png" />
+        <a href="./index.html" class="nav">SeoYoung</a>
+      </div>
+      <div id="menu">
         <div class="dropdown">
-          <button class="menu1">About</button>
-          <div style="display: none;"class="dropdownmenu">
-            <div href="#">Me</div>
-            <div href="#">like</div>
-            <div href="#">cookie</div>
+          <button type="button" class="menu1" onclick="collapse(this);">
+            About
+          </button>
+          <div class="dropdownmenu">
+            <p>Me</p>
+            <p>like</p>
+            <p>cookie</p>
           </div>
         </div>
         <a href="./project.html" class="menu2">Projects</a>

@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./project.css">
+    <script defer src="./form.js"></script>
+    
     <link
       rel="stylesheet"
       as="style"
@@ -20,12 +23,27 @@
   </head>
   <body>
     <div id="header">
-      <img src="./img/seoyoung1.png" />
-      <a href="./index.html" class="nav">SeoYoung</a>
-      <div class="menu">
+      <div class="log">
+        <img src="./img/seoyoung1.png" />
+        <a href="./index.html" class="nav">SeoYoung</a>
+      </div>
+      <div id="menu">
         <a href="./about.html" class="menu1">About</a>
         <a href="./project.html" class="menu2">Projects</a>
         <a href="./contact.html" class="menu3">Contact</a>
       </div>
+    </div>
+      <div class="modal_btn">Comment</div>
+    <div class="modal_background"></div>
+    <div class="modal_wrap">
+      <div class="text">
+        <div class="input">
+          <div class="inputmessage">Comment<br /><input type="inputmessage" autofocus /></div>
+          <div class="modal_close">
+            <div class="closeImg">thanks</div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

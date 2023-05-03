@@ -323,8 +323,11 @@ iframe {
     display: none;
   }
   /*info.html*/
-  #accordion_container,
-  #rate {
+  #accordion_container {
+    width: 90%;
+  }
+  /*rating.html*/
+  #improve {
     width: 90%;
   }
 }

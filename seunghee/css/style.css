@@ -150,13 +150,13 @@ footer {
   text-align: center;
   border-radius: 16px;
 }
-.modal_container.remove {
+.remove {
   display: none;
 }
 
 /*info.html*/
 #accordion_container {
-  margin: 80px auto 40px;
+  margin: 80px auto;
   width: 720px;
 }
 #accordion_container h1 {
@@ -192,34 +192,68 @@ footer {
   color: turquoise;
 }
 iframe {
-  margin: 0px auto;
+  margin: 10px auto;
   display: block;
 }
 .accordion:after {
   content: "\002B";
-  font-size: 16px;
-  font-weight: bold;
   color: var(--accent-color);
   float: right;
-  margin-left: 8px;
 }
 .accordion.active:after {
   content: "\002D";
 }
 
-#rate {
-  margin: 64px auto 24px;
-  width: 720px;
+/*rating.html*/
+#rating {
+  text-align: center;
+  margin: 24px;
 }
-.stepper_container {
+.tooltip {
+  position: relative;
+  display: inline-block;
+  margin: 24px 0px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#form {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+#improve_question {
+  font-size: 20px;
+  margin: 24px 0px 16px 0px;
+}
+#improve {
+  width: 600px;
+  margin: auto;
 }
 .stepper {
   display: flex;
   font-size: 24px;
   justify-content: center;
+  position: relative;
 }
 .stepper_btn {
   font-size: 24px;
@@ -228,16 +262,14 @@ iframe {
 }
 .range {
   width: 48px;
-  text-align: center;
 }
 .submit_btn {
   font-family: "Roboto mono", sans-serif;
   width: 88px;
   height: 48px;
-  margin: 16px;
+  margin: 32px;
   font-size: 16px;
 }
-/*반응형*/
 @media screen and (max-width: 800px) {
   .navbar {
     flex-direction: column;
@@ -291,7 +323,8 @@ iframe {
     display: none;
   }
   /*info.html*/
-  #accordion_container {
+  #accordion_container,
+  #rate {
     width: 90%;
   }
 }

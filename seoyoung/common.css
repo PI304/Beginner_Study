@@ -1,16 +1,13 @@
 @import "./reset.css";
 
-
 body{
   width: 1536px;
   height: 540px;
-}
-
-body {
   word-break: keep-all;
   font-family: "Pretendard Variable", sans-serif;
   background-color: rgb(234, 232, 232);
 }
+
 #header {
   padding-top: 11px;
   padding-bottom: 5px;
@@ -30,8 +27,7 @@ body {
   gap: 50px;
 }
 
-#header #menu a,
-.button {
+#header #menu .menu1, .menu2, .menu3 {
   text-decoration-line: none;
   font-weight: 450;
   font-size: 1rem;
@@ -98,72 +94,4 @@ body {
   margin-left: 1300px;
   display: flex;
   transform: translateY(-95px);
-}
-
-@media (max-width: 1160px) {
-  #header #menu {
-    margin-left: 700px;
-    margin-top: 10px;
-    align-items: center;
-    display: flex;
-  }
-}
-@media (max-width: 600px) {
-  #header #menu {
-    margin-left: 200px;
-    margin-top: 10px;
-    align-items: center;
-    display: flex;
-  }
-  #header #menu a {
-    text-decoration-line: none;
-    font-weight: 450;
-    font-size: 0.8rem;
-    margin-top: 10px;
-    color: rgb(75, 75, 75);
-    margin-left: 6px;
-  }
-
-  #header #log .nav {
-    /*seoyoung*/
-    font-size: 0.9rem;
-    font-weight: 700;
-    margin-left: 4px;
-    margin-top: 10px;
-    text-decoration-line: none;
-    color: rgb(75, 75, 75);
-  }
-
-  .footer {
-    /*밑 전체*/
-    font-weight: 550;
-    font-size: 0.9rem;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    gap: 30px;
-    border-top: 0.1px solid rgba(172, 172, 172, 0.748);
-    padding-top: 30px;
-    padding-left: 10px;
-    margin-top: 40px;
-  }
-
-  .footer div {
-    /*밑의 값*/
-    font-size: 0.75rem;
-    font-weight: 200;
-    display: flex;
-    justify-content: left;
-    align-items: left;
-    margin-top: 8px;
-    padding-bottom: 60px;
-    color: rgb(81, 81, 81);
-  }
-  .last {
-    /*이메일*/
-    font-size: 0.1rem;
-    font-weight: 100;
-    margin-left: 380px;
-    transform: translateY(-90px);
-  }
 }

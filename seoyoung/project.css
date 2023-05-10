@@ -1,106 +1,120 @@
 @import "./reset.css";
 
-
-.input {
-  /* border: 1px solid red; */
-  font-size: 1.2rem;
-}
-
-input[type="inputmessage"] {
-  background-color: rgb(234, 232, 232);
-  border: 0.5px solid rgba(128, 128, 128, 0.44);
-  width: 200px;
-  height: 250px;
-  margin-top: 10px;
-  padding-right: 100px;
-}
-
-.modal_btn {
-  background-color: #bbc7c0c2;
-  box-shadow: 2px 3px 8px rgba(112, 110, 110, 0.5);
-  border: 0.5px rgba(128, 128, 128, 0.252);
-  border-radius: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 130px;
-  height: 130px;
-  font-weight: 550;
-  font-size: 1.375rem;
-  transition: 0.3s;
+h1{
+  text-align: left;
+  margin-top: 6%;
+  margin-bottom: 2%;
+  font-size: 2.5rem;
   color: rgb(35, 34, 34);
-  margin-left: 700px;
-  margin-top: 300px;
+  padding-left: 16%;
 }
 
-.modal_wrap {
-  display: none;
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  border: 0.5px solid rgba(128, 128, 128, 0.252);
-  top: 50%;
-  left: 50%;
-  margin: -250px 0 0 -250px;
-  background: #eee;
-  z-index: 2;
-  border-radius: 5px; /*요소 모서리 둥글게 */
-}
-.modal_background {
-  display: none;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  top: 0;
-  left: 0;
-  z-index: 1;
-  
-}
-.modal_close {
-  width: 26px;
-  height: 26px;
-  position: absolute;
-  top: 10px;
-  margin-left: 417px;
+iframe{
+  margin-left: 47%;
 }
 
-.modal_wrap .text {
-  display: flex;
-  color: rgb(81, 81, 81);
+
+.head{
+  margin-top: 7%;
   font-size: 1.5rem;
+  padding-left: 16%;
+  font-weight: 600;
+}
+
+.sub{
+  font-size: 1rem;
+  padding-left: 16%;
+  margin-top: 1%;
+  font-weight: 300;
+  line-height: 23px;
+}
+
+.mbti{
+  width: 37%;
+  height: 57%;
+  margin-left: 47%;
+}
+
+#project3 a{
+  color: rgb(35, 34, 34);
+}
+
+legend{
+  color: rgb(35, 34, 34);
+  font-size: 1.3rem;
+  font-weight: 600;
+  transform: translateX(94px) translateY(28px);
+}
+
+#comment{
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 80px;
+  text-align: center;
 }
 
-.modal_close .closeImg {
-  display: block;
-  width: 60%;
-  height: 60%;
-  margin-left: 200%;
+
+textarea[name="comment"]{
+  margin-top: 200px;
+  font-family: "Pretendard Variable", sans-serif; 
+  background-color: #f0f0f0b5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  height: 100px;
+  border: 0.5px solid rgba(128, 128, 128, 0.44);
 }
 
-.modal_btn:hover {
-  background-color: #c4d7ce;
+#button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+  margin-left: 80px;
+  margin-bottom: 70px;
 }
 
-.text .input .closeImg{
-  border-radius: 5%;
+
+input[type="submit"]{
   width: 70px;
   height: 30px;
-  background-color: #b2c7c2;
-  font-size: 1rem;
-  font-weight: 500;
+  background-color: #cdd5d4;
+  border-radius: 5px; /*요소 모서리 둥글게 */
+  border: 0.5px rgba(128, 128, 128, 0.252);
+  font-size: 0.9rem;
+  color: rgb(58, 58, 58);
+  transition: 0.15s;
+}
+input[type="reset"]{
+  width: 70px;
+  height: 30px;
+  background-color: #cdd5d4;
+  border-radius: 5px; /*요소 모서리 둥글게 */
+  border: 0.5px rgba(128, 128, 128, 0.252);
+  font-size: 0.9rem;
+  color: rgb(58, 58, 58);
+  transition: 0.15s;
+}
+
+input[type="submit"]:hover,[type="reset"]:hover{
+  background-color: rgba(196, 198, 196, 0.418);
+}
+
+.top{
+  font-size: 1.2rem;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 360px;
-  transform: translateX(-234px);
-  transition: 0.3s;
-  box-shadow: 2px 3px 4px rgba(112, 110, 110, 0.2);
-}
-
-.text .input .closeImg:hover{
-  background-color: #cedbc2;
+  color: rgba(255, 254, 254, 0.912);
+  background-color: rgba(116, 123, 111, 0.277);
+  border-radius: 100px; /*요소 모서리 둥글게 */
+  border: 0.5px rgba(128, 128, 128, 0.252);
+  box-shadow: 2px 3px 8px rgba(112, 110, 110, 0.215);
+  width: 45px;
+  height: 45px;
+  float:right;
+  transform: translateX(-110px)translateY(-50px);
 }

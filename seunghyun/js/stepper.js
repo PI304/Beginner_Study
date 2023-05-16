@@ -24,3 +24,4 @@ buttonWrap.addEventListener("click", (a) => {
         countNum.style.color = "#ffffff"
     }
 });
+

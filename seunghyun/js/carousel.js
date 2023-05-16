@@ -31,7 +31,7 @@ carouselSlide.addEventListener("transitionend", () => {
   console.log(carouselImages[counter]);
   if (carouselImages[counter].id === 'lastClone'){
     carouselSlide.style.transition = 'none'; // 트랜지션 효과 없애기
-    counter = carouselImages.length -2; // couter 초기화
+    counter = carouselImages.length -2; // counter 초기화
     carouselSlide.style.transform = 'translateX(' + (-size * counter) + 'px)'; // 실제 마지막 이미지로 이동.
   } else if (carouselImages[counter].id === 'firstClone') {
     carouselSlide.style.transition = 'none';

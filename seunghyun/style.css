@@ -744,7 +744,7 @@ p#tooltip-text:before {
 
 /* 캐러셀 */
 .carousel-container{
-    width: 28%;
+    width: 45vh;
     margin: 30px auto;
     border: 0px solid #000;
     overflow: hidden;
@@ -765,7 +765,7 @@ p#tooltip-text:before {
     width: 20px;
     height: 36px;
     color: white;
-    background: url(img/carousel_prevBtn.png) no-repeat;
+    /* background: url(img/carousel_prevBtn.png) no-repeat; */
 }
 
 #nextBtn{
@@ -776,14 +776,14 @@ p#tooltip-text:before {
     width: 20px;
     height: 36px;
     color: white;
-    background: url(img/carousel_nextBtn.png) no-repeat;
+    /* background: url(img/carousel_nextBtn.png) no-repeat; */
 } 
 
 /* 스크롤 검은색 배경*/
 
 
 
-  #blackScreen {
+#blackScreen {
     position: fixed;
     bottom: 0;
     width: 100%;

@@ -1,6 +1,6 @@
+// const { default: axios } = require("axios");
 
 
- // 스크롤
 // 스크롤 이벤트 리스너 등록
 window.addEventListener('scroll', function() {
   var scrollPosition = window.scrollY; // 현재 스크롤 위치
@@ -120,14 +120,99 @@ window.onload=function(){
   const target = document.getElementById("tooltip-img");
   const tooltip = document.getElementById("tooltip-text");
 
-  // change display to 'block' on mouseover
+  // target 요소에 이벤트 리스너를 연결합니다.
   target.addEventListener('mouseover', () => {
     tooltip.style.display = 'block';
-  }, false);
-  
-  // change display to 'none' on mouseleave
+  });
+
   target.addEventListener('mouseleave', () => {
     tooltip.style.display = 'none';
-  }, false);
+  });
 }
 
+const getData = async () => {
+  try {
+    // 유저 정보 가져오기 
+    const res = await axios.get(`http://52.78.238.141/api/users`);
+    const users = res.data;
+    console.log(users);
+
+    // 새 유저 생성
+    const createRes = await axios
+    .post(`http://52.78.238.141/api/users`, {
+      name: "new user",
+      email: "newuser@example.com"
+    });
+    const newUser = createRes.data;
+    console.log(newUser);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getData();
+
+// userId 가져오기
+const getUserById = async (userId) => {
+  try {
+    const response = await axios
+    .get(`http://52.78.238.141/api/users/${userId}`)
+    const user = response.data;
+    console.log(user);
+
+    const updateResponse = await axios
+    .patch(`http://52.78.238.141/api/users/${userId}`)
+    const updateUser = updateResponse.data;
+    console.log(updateUser);
+
+    const deleteResponse = await axios
+    .delete(`http://52.78.238.141/api/users/${userId}`);
+    console.log(deleteResponse.data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getUserById();
+
+// Post 가져오기
+const getUserByPost = async () => {
+  try {
+    const response = await axios
+    // get 
+    .get(`http://52.78.238.141/api/posts/`)
+    const post = response.data;
+    console.log(post);
+
+    // post 생성
+    const newPost = {
+      title: "New Post",
+      body: "New Post Body",
+      userId: 1,
+    };
+    const createResponse = await axios
+    .post(`http://52.78.238.141/api/posts/`)
+    const createdPost = createResponse.data;
+    console.log(createPost);
+
+    // patch로 posrt 업데이트 
+    const updatePost = {
+      title: "Update Post",
+      body: "Updated Post Body",
+      userId: 2,
+    };
+    const patchResponse = await axios
+    .patch(`http://52.78.238.141/api/posts/${postId}`)
+    const patchPost = patchResponse.data;
+    console.log(patchPost);
+
+    // delete
+    const deleteResponse = await axios
+    .delete(`http://52.78.238.141/api/posts/${postId}`);
+    console.log(deleteResponse.data);
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+getUserByPost();

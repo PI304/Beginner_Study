@@ -18,6 +18,7 @@
   font-weight: 550;
   font-size: 1.125rem;
   margin-top: 10px;
+  color: rgb(75, 75, 75);
 }
 
 #contact .pn,
@@ -87,7 +88,7 @@ input[type="inputmessage"] {
   margin: -250px 0 0 -250px;
   background: #eee;
   z-index: 2;
-  border-radius: 5px; /*요소 모서리 둥글게 */
+  border-radius: 2px; /*요소 모서리 둥글게 */
 }
 .modal_background {
   display: none;
@@ -98,7 +99,6 @@ input[type="inputmessage"] {
   top: 0;
   left: 0;
   z-index: 1;
-  
 }
 .modal_close {
   width: 26px;
@@ -111,17 +111,18 @@ input[type="inputmessage"] {
 .modal_wrap .text {
   display: flex;
   color: rgb(81, 81, 81);
-  font-size: 1.5rem;
+  font-size: 1rem;
   justify-content: center;
   align-items: center;
   margin-top: 40%;
+  line-height: 24px;
 }
 
 .modal_close .closeImg {
   display: block;
-  width: 60%;
-  height: 60%;
-  margin-left: 200%;
+  width: 45%;
+  height: 45%;
+  margin-left: 240%;
 }
 
 .modal_btn:hover {

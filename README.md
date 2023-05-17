@@ -4,10 +4,9 @@
 
 1. [시작하기](##1.-시작하기)
 2. [기술 스택](##2.-기술-스택)
-3. [index.html 가이드](##3.-index.html-가이드)
-4. [협업 방법](##4.-협업-방법)
-5. [브랜치 이름 컨벤션](##5.-브랜치-이름-컨벤션)
-6. [커밋 메세지 컨벤션](##6.-커밋-메세지-컨벤션)
+3. [협업 방법](##4.-협업-방법)
+4. [브랜치 이름 컨벤션](##5.-브랜치-이름-컨벤션)
+5. [커밋 메세지 컨벤션](##6.-커밋-메세지-컨벤션)
 
 ## 1. 시작하기
 
@@ -26,34 +25,9 @@ $ git clone https://github.com/PI304/Beginner_Study.git
 <a><img src="https://img.shields.io/badge/netlify-00C7B7?style=flat-square&logo=netlify&logoColor=white"/></a>
 <a><img src="https://img.shields.io/badge/Prettier-F7B93E?style=flat-square&logo=prettier&logoColor=white"/></a>
 
-## 3. index.html 가이드
-
-```
-          <div class="card">
-            <a href="본인메인페이지 경로" target="_blank">
-              <div class="card-img">
-                <img src="본인 썸네일 경로" />
-              </div>
-              <div class="card-body">
-                <h2 class="card-title">본인이름</h2>
-                <p class="card-intro">@github ID</p>
-              </div>
-            </a>
-          </div>
-          <div class="card">
-            <div class="card-img skeleton"></div>
-            <div class="card-body">
-              <h2 class="card-title skeleton"></h2>
-              <p class="card-intro skeleton"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-```
 
 
-
-## 4. 협업 방법
+## 3. 협업 방법
 ```
 Pull Request는 화요일 00시부터 23:59분까지  수 있습니다
 Pull Request를 날리면 운영진이 코드를 리뷰한 뒤 수정할 것이 있으면 수정 요청을 드립니다
@@ -139,7 +113,7 @@ $ git branch -D 삭제하고싶은브랜치이름
 ```
 
 
-## 5. 브랜치 이름 컨벤션
+## 4. 브랜치 이름 컨벤션
 
 ```
 Week?/[기능요약]
@@ -151,7 +125,7 @@ Week?/[기능요약]
 ex) Week2/dropdown
 ```
 
-## 6. 커밋 메세지 컨벤션
+## 5. 커밋 메세지 컨벤션
 
 ```
 <태그>: <제목>

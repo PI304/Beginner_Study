@@ -1,65 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My blog</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
+    <head>
+        <script src="https://kit.fontawesome.com/def66b134a.js" crossorigin="anonymous"></script>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My blog</title>
+        <link rel="stylesheet" href="style.css"/>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+    </head>
 
-<body>
+    <body>
 
-    <div class="container">
-        <div class="header">
-            <div id="blogname">
-                <a href="index.html">Kate's Blog</a>
-            </div>
-        </div>
-
-        <div class="nav">
-            <img src="https://cdn-icons-png.flaticon.com/512/185/185801.png" class="blogIcon">
-
-            <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                </li>
-                <li>
-                    <a href="profile.html">Profile</a>
-                </li>
-                <div class="dropdown">
-                    <button onclick="dp_menu()" class="button">Blog</button>
-                    <div style="display: none;" id="drop-content">
-                        <a href="blog.html">Archive</a>
-                        <a href="blog.html">Travel</a>
-                        <a href="blog.html">Study</a>
-                    </div>
+        <div class="container">
+            <div class="header">
+                <div id="blogname">
+                    <a href="index.html">Kate's Blog</a>
                 </div>
-                <li>
-                    <a href="project.html">Project</a>
-                </li>
-                <li>
-                    <a href="contact.html">Contact</a>
-                </li>
+            </div>
 
+            <div class="nav">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/185/185801.png"
+                    class="blogIcon">
 
-
-                <!-- 햄버거 버튼 -->
-                <li class="ham-btn">
-                    <a class="menu-trigger" href="#">
-                        <div class="menu-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                                class="bi bi-list" viewBox="0 0 16 16">
-                                <path fill-rule="evenodd"
-                                    d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
-                            </svg>
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+                    <div class="dropdown">
+                        <button onclick="dp_menu()" class="button">Blog</button>
+                        <div style="display: none;" id="drop-content">
+                            <a href="blog.html">Archive</a>
+                            <a href="blog.html">Travel</a>
+                            <a href="blog.html">Study</a>
                         </div>
-                    </a>
-                </li>
-            </ul>
+                    </div>
+                    <li>
+                        <a href="project.html">Project</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+
+                    <!-- 햄버거 버튼 -->
+                    <li class="ham-btn">
+                        <a class="menu-trigger" href="#">
+                            <div class="menu-icon">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="20"
+                                    height="20"
+                                    fill="currentColor"
+                                    class="bi bi-list"
+                                    viewbox="0 0 16 16">
+                                    <path
+                                        fill-rule="evenodd"
+                                        d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                                </svg>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
             </nav>
 
             <div class="menu-area">
@@ -72,23 +79,33 @@
                             <button class="accordion">Programming</button>
                             <div class="accordion-content">
                                 <ul>
-                                    <li class="accordion-title"><a href="blog.html">HTML/CSS</a></li>
-                                    <li class="accordion-title"><a href="blog.html">JAVASCRIPT</a></li>
+                                    <li class="accordion-title">
+                                        <a href="blog.html">HTML/CSS</a>
+                                    </li>
+                                    <li class="accordion-title">
+                                        <a href="blog.html">JAVASCRIPT</a>
+                                    </li>
                                 </ul>
                             </div>
 
                             <button class="accordion">Algorithm</button>
                             <div class="accordion-content">
                                 <ul>
-                                    <li class="accordion-title"><a href="#">DP</a></li>
+                                    <li class="accordion-title">
+                                        <a href="#">DP</a>
+                                    </li>
                                 </ul>
                             </div>
 
                             <button class="accordion">Design</button>
                             <div class="accordion-content">
                                 <ul>
-                                    <li class="accordion-title"><a href="project.html">UI/UX design</a></li>
-                                    <li class="accordion-title"><a href="#">Figma</a></li>
+                                    <li class="accordion-title">
+                                        <a href="project.html">UI/UX design</a>
+                                    </li>
+                                    <li class="accordion-title">
+                                        <a href="#">Figma</a>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -115,64 +132,110 @@
                     </div>
 
                     <div id="article">
-                        <div class="mainContent">
-                            <span id="intro">Hi, I am Seung hyun Kim
-                                <br>a
-                                <b>frontend developer</b>
-                                based in Seoul, South Korea.
-                            </span>
-                            <br><br>
-                            <span id="subIntro">
-                                "People love what other people are passionate about.
-                                <br>You remind people of what they forgot"
-                                <br>
-                                <br>- LALALAND(2017)
-                            </span>
-                            <div id="homeImage">
-                                <!-- <img
-                                    src="https://cdn.theatlantic.com/thumbor/CfwAKynu3EBJPwvBDUK6Ngl_5Sk=/250x0:1249x999/540x540/media/img/mt/2017/01/la_la/original.jpg"> -->
+                        <div class="homeContent">
+                            <div class="IntroText">
+                                <span id="intro">Hi, I am Seung hyun Kim
+                                    <br>a
+                                    <b>frontend developer</b>
+                                    based in Seoul, South Korea.
+                                </span>
+                                <br><br>
+                                <span id="subIntro">
+                                    "People love what other people are passionate about.
+                                    <br>You remind people of what they forgot"
+                                    <br>
+                                    <br>- LALALAND(2017)
+                                </span>
+                                <button type="button" id="modal_btn">Contact me</button>
+                                <div class="black_bg"></div>
+                                <div class="modal_wrap">
+                                    <div class="modal_close">
+                                        <a href="#">close</a>
+                                    </div>
+                                    <div class="modal_content">
+                                        <div id="modal_left">
+                                            <div id="modal_intro">Let's Work
+                                                <br>Together
+                                            </div>
+                                            <div id="modal_subIntro">
+                                                <br>I workjmfsldf my career is I worked in djmfsldf my career
+                                                <br>
+                                                is I worked in djmfsldf my career is
+                                                <br>
+                                                <br>mobile number : 010-2000-2001
+                                                <br><br>Email : seunghyunkim@naver.com
+                                            </div>
+                                        </div>
+                                        <div id="modal_right">
+                                            <div class="modal_input">
+                                                <ul>
+                                                    <li>name</li>
+                                                    <input
+                                                        type="text"
+                                                        id="name"
+                                                        name="name"
+                                                        required="required"
+                                                        minlength="4"
+                                                        maxlength="8"
+                                                        size="12">
+                                                    <li>Phone number</li>
+                                                    <input
+                                                        type="text"
+                                                        id="number"
+                                                        name="number"
+                                                        required="required"
+                                                        minlength="8"
+                                                        maxlength="18"
+                                                        size="20">
+                                                    <li>Message</li>
+                                                    <input
+                                                        type="text"
+                                                        id="message"
+                                                        name="message"
+                                                        required="required"
+                                                        minlength="4"
+                                                        maxlength="200"
+                                                        size="50">
+                                                    <li>
+                                                        <button id="modal_btn_close">submit</button>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
+
+                            <div id="homeImage">
+                                <img
+                                    src="https://cdn.theatlantic.com/thumbor/CfwAKynu3EBJPwvBDUK6Ngl_5Sk=/250x0:1249x999/540x540/media/img/mt/2017/01/la_la/original.jpg">
+                            </div>
+
                         </div>
 
                         <div id="description">
-                            <button type="button" id="modal_btn">Contact me</button>
-                            <div class="black_bg"></div>
-                            <div class="modal_wrap">
-                                <div class="modal_close">
-                                    <a href="#">close</a>
-                                </div>
-                                <div class="modal_content">
-                                    <div id="modal_left">
-                                        <div id="modal_intro">Let's Work
-                                            <br>Together
-                                        </div>
-                                        <div id="modal_subIntro">
-                                            <br>I workjmfsldf my career is I worked in djmfsldf my career
-                                            <br> is I worked in djmfsldf my career is
-                                            <br>
-                                            <br>mobile number : 010-2000-2001
-                                            <br><br>Email : seunghyunkim@naver.com
-                                        </div>
-                                    </div>
-                                    <div id="modal_right">
-                                        <div class="modal_input">
-                                            <ul>
-                                                <li>name</li>
-                                                <input type="text" id="name" name="name" required minlength="4"
-                                                    maxlength="8" size="12">
-                                                <li>Phone number</li>
-                                                <input type="text" id="number" name="number" required minlength="8"
-                                                    maxlength="18" size="20">
-                                                <li>Message</li>
-                                                <input type="text" id="message" name="message" required minlength="4"
-                                                    maxlength="200" size="50">
-                                                <li><button id="modal_btn">submit</button></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                                
-                            </div>
+                            <button onclick="getData()">Get Users</button>
+                            <br/><br/>
+                            <input type="text" id="getUserNameInput" placeholder="Enter name (necessary)"/>
+                            <input
+                                type="text"
+                                id="getUserEmailInput"
+                                placeholder="Enter email (necessary)"/>
+                            <input type="text" id="getUserURLInput" placeholder="Enter url"/>
+                            <input
+                                type="text"
+                                id="getUserIntroductionInput"
+                                placeholder="Enter introduction"/>
+                            <button onclick="addUser()">Add User</button>
+                            <br/><br/>
+                            <input type="text" id="getUserIdInput" placeholder="Enter User ID"/>
+                            <button onclick="getUserById()">Get User By Id</button>
+                            <br/><br/>
+                            <input type="text" id="deleteUserIdInput" placeholder="Enter User ID"/>
+                            <button onclick="deleteUser()">Delete User</button>
+                            <!-- <input type="text" id="updateUserIdInput" placeholder="Enter User ID" />
+                            <button onclick="updateUser()">Update User</button> -->
                         </div>
                     </div>
                 </div>
@@ -180,15 +243,16 @@
 
             <div class="footer">
                 <div id="footerContent">
-
                     <span>Copyright 2023. kate. All Rights Reserved</span>
                     <span></span>
                 </div>
+
             </div>
         </div>
     </div>
+    <script src="../../node_modules/axios/dist/axios.min.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
 
 </body>
-
-<script src="main.js"></script>
 </html>

@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=1200" />
     <link rel="stylesheet" href="./index.css" />
     <link rel="stylesheet" href="./common.css" />
+    <link rel="stylesheet" href="./reset.css">
     <link
       rel="stylesheet"
       as="style"
@@ -20,6 +21,7 @@
       type="image/x-icon"
     />
     <script defer src="./index.js"></script>
+    <script defer src="./api.js"></script>
   </head>
   <body>
     <div id="header">
@@ -33,12 +35,12 @@
             About
           </button>
           <div class="dropdownmenu">
-            <p>Me</p>
-            <p>like</p>
-            <p>cookie</p>
+            <a href="./aboutme.html">Me</a>
+            <a href="./Project.html">Projects</a>
+            <a href="./contact.html">Contact</a>
           </div>
         </div>
-        <a href="./project.html" class="menu2">Projects</a>
+        <a href="./Project.html" class="menu2">Projects</a>
         <a href="./contact.html" class="menu3">Contact</a>
       </div>
     </div>
@@ -54,7 +56,7 @@
         </span>
       </div>
       <div id="button">
-        <a href="./about.html" class="button1">About</a>
+        <a href="./aboutme.html" class="button1">About</a>
         <a href="./project.html" class="button2">Projects</a>
         <a href="./contact.html" class="button3">Contact</a>
       </div>
@@ -77,4 +79,5 @@
       2023 By Seo&nbsp;Young.<br />jungseo1024@gmail.com</span
     >
   </body>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
 </html>

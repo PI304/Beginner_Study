@@ -299,6 +299,19 @@ ul {
     position: absolute;
 }
 
+#modal_btn_close {
+    background-color: #888686;
+    width: 10rem;
+    height: 3rem;
+    border: none;
+    margin: 2rem;
+    bottom: 3rem;
+    left: 14rem;
+    border-radius: 2px;
+
+}
+
+
 
 #modal_btn:hover {
     background: rgb(233, 202, 179);
@@ -330,7 +343,7 @@ ul {
     background: #d3d2d0;
     float: right;
     text-align: center;
-    bottom: 12vh;
+    bottom: 7vh;
     right: 5vh;
     padding-right: 10vh;
     position: absolute;
@@ -485,7 +498,7 @@ a:active {
     padding: 10px 40px;
     font-size: 16px;
     background-color: #fcfcfa;
-    color: rgb(40, 40, 40);
+    color: rgb(26, 25, 25);
     border: none;
 
 }
@@ -532,10 +545,10 @@ a:active {
     font-size: 20px;
 }
 
-button {
+/* button {
     border: 0;
     background-color: transparent;
-}
+} */
 
 .countNumber {
     font-size: 50px;
@@ -744,7 +757,7 @@ p#tooltip-text:before {
 
 /* 캐러셀 */
 .carousel-container{
-    width: 28%;
+    width: 45vh;
     margin: 30px auto;
     border: 0px solid #000;
     overflow: hidden;
@@ -760,12 +773,13 @@ p#tooltip-text:before {
 #prevBtn{
     position:absolute;
     top: 50%;
-    left: 0;
+    left: -0;
     transform: translate(0%, -50%);
     width: 20px;
     height: 36px;
     color: white;
-    background: url(img/carousel_prevBtn.png) no-repeat;
+    background-color: rgb(6, 6, 6);
+    /* background: url(img/carousel_prevBtn.png) no-repeat; */
 }
 
 #nextBtn{
@@ -776,14 +790,15 @@ p#tooltip-text:before {
     width: 20px;
     height: 36px;
     color: white;
-    background: url(img/carousel_nextBtn.png) no-repeat;
+    background-color: rgb(6, 6, 6);
+    /* background: url(img/carousel_nextBtn.png) no-repeat; */
 } 
 
 /* 스크롤 검은색 배경*/
 
 
 
-  #blackScreen {
+#blackScreen {
     position: fixed;
     bottom: 0;
     width: 100%;

@@ -1,8 +1,5 @@
 @import "./reset.css";
 
-#header #menu .dropdown {
-  margin-top: 20px;
-}
 
 #header #menu .dropdown .menu1 {
   cursor: pointer;
@@ -19,16 +16,23 @@
   transition: 0.3s;
 }
 
-#header #menu .dropdownmenu {
+#header #menu .dropdown .dropdownmenu {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
   border-radius: 2%;
   flex-direction: column;
-  color: rgba(94, 94, 94, 0.834);
   transition: 0.3s;
-  width: 50px;
+  width: 60px;
   margin-top: 10px;
+  position: fixed;
+}
+
+#header #menu .dropdown .dropdownmenu a {
+  color: rgba(94, 94, 94, 0.834);
+  font-weight: 400;
+  font-size: 1rem;
+  transition: 0.1s;
 }
 
 .active,

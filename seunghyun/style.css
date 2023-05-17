@@ -139,13 +139,13 @@ ul {
 .content {
     border-radius: 5px;
     /* border: 1px solid gray; */
-    margin: 10px;
+    /* margin: 10px; */
 }
 
 #title {
     border-radius: 5px;
     /* border: 1px solid gray; */
-    margin: 20px;
+    margin-left: 2rem;
     height: 100px;
 }
 
@@ -162,20 +162,39 @@ ul {
 
 }
 
-.mainContent {
-    padding: 2em 6em 2em 6em;
+.homeContent {
+    padding: 4em 6em 4em 16em;
+    height: 24em;
     margin: 1em;
     position: relative;
     text-align: left;
-    flex-direction : column;
     display: flex;
     /* border: 1px solid gray; */
 }
 
+.mainContent {
+    padding: 2em 6em 2em 6em;
+    height: 20em;
+    margin: 1em;
+    position: relative;
+    text-align: left;
+
+    /* border: 1px solid gray; */
+}
+
+.blogContent {
+    padding: 2em 6em 2em 6em;
+    height: 25em;
+    margin: 1em;
+    position: relative;
+    text-align: left;
+}
+
+
+
 #intro {
     font-size: 40px;
     text-align: left;
-    /* 정렬하고싶다 -> 부모요소 */
 
 }
 
@@ -189,28 +208,40 @@ ul {
     
 }
 
+#IntroText {
+    display: flex;
+}
+
 
 #homeImage {
     /* border: 1px solid gray; */
     width: 10vh;
-    height: 15vh;
+    /* height: 15vh; */
     margin: 0px 0px 0px 0px;
     float: right;
     border-radius: 210px 210px 0px 0px;
     top: 40px;
     left: 1000px;
+    display: flex
 }
 
 #homeImage img {
 
-    margin: 0px 0px 0px 0px;
+    margin: 0px;
     float: right;
     border-radius: 210px 210px 0px 0px;
 
 }
 
+.lalaland {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .lalaland img {
     width: 40rem;
+    ;
 }
 
 #profileImage {
@@ -238,8 +269,8 @@ ul {
 
 #description {
     border-radius: 5px;
-    /* border: 1px solid gray; */
-    margin: 20px 30px 20px 0px;
+    width: 90%;
+    margin: 20px 30px 50px 0px;
     bottom: 0;
     padding: 0rem 0rem 0rem 5rem;
     /* height: 20vh; */
@@ -253,10 +284,7 @@ ul {
     text-align: center;
 }
 
-.profile {
-    text-align: left;
-    margin: 3vh;
-}
+
 
 /* 모달 버튼 */
 #modal_btn {
@@ -265,7 +293,8 @@ ul {
     height: 3rem;
     border: none;
     margin: 2rem;
-    left: 8rem;
+    bottom: 3rem;
+    left: 14rem;
     border-radius: 2px;
     position: absolute;
 }
@@ -353,9 +382,15 @@ ul {
     float: left;
 }
 
+.blogSection {
+    width: 100%;
+    background-color: #fcfcfa;
+    float: left;
+}
+
 .footer {
     width: 100%;
-    height: 50px;
+  
     background-color: #fcfcfa;
     float: left;
 }
@@ -705,4 +740,110 @@ p#tooltip-text:before {
     margin-left: -8px;
     border: 8px solid transparent;
     border-top: 8px solid #867575;
+}
+
+/* 캐러셀 */
+.carousel-container{
+    width: 28%;
+    margin: 30px auto;
+    border: 0px solid #000;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-slide{
+    display: flex;
+    width: 100%;
+    height: 20rem;
+}
+
+#prevBtn{
+    position:absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0%, -50%);
+    width: 20px;
+    height: 36px;
+    color: white;
+    background: url(img/carousel_prevBtn.png) no-repeat;
+}
+
+#nextBtn{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0%, -50%);
+    width: 20px;
+    height: 36px;
+    color: white;
+    background: url(img/carousel_nextBtn.png) no-repeat;
+} 
+
+/* 스크롤 검은색 배경*/
+
+
+
+  #blackScreen {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 3rem;
+    display: none;
+  }
+
+  #education {
+    position: relative;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
+    background-color: white;
+    text-align: center;
+    font-size: 3rem;
+    color: black;
+  }
+
+  #education:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  #education:hover:before {
+    opacity: 0.6;
+  }
+
+  #education:hover {
+    color: white;
+  }
+
+.largeFont {
+    font-weight: 600px;
+    font-size: 20px;
+}
+
+/* 스크롤 */
+.box-scroll {
+    width: 100%;
+    height: 100em;
+    background-color: #000;
+    color: white;
+    box-sizing: border-box;
+}
+
+.profile .box-scroll:nth-child(2n) {
+    background-color: #e4c8c8;
+}
+
+.profile {
+    text-align: left;
+    /* margin: 3vh; */
 }

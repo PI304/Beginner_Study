@@ -5,9 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./common.css" />
-    <link rel="stylesheet" href="./project.css">
-    <script defer src="./form.js"></script>
-    
+    <link rel="stylesheet" href="./project.css" />
     <link
       rel="stylesheet"
       as="style"
@@ -20,6 +18,7 @@
       rel="shortcut icon"
       type="image/x-icon"
     />
+    <script defer src="./project.js"></script>
   </head>
   <body>
     <div id="header">
@@ -28,22 +27,80 @@
         <a href="./index.html" class="nav">SeoYoung</a>
       </div>
       <div id="menu">
-        <a href="./about.html" class="menu1">About</a>
-        <a href="./project.html" class="menu2">Projects</a>
+        <a href="./aboutme.html" class="menu1">About</a>
+        <a href="./Project.html" class="menu2">Projects</a>
         <a href="./contact.html" class="menu3">Contact</a>
       </div>
     </div>
-      <div class="modal_btn">Comment</div>
-    <div class="modal_background"></div>
-    <div class="modal_wrap">
-      <div class="text">
-        <div class="input">
-          <div class="inputmessage">Comment<br /><input type="inputmessage" autofocus /></div>
-          <div class="modal_close">
-            <div class="closeImg">thanks</div>
-          </div>
-        </div>
-      </div>
+    <h1>Projects</h1>
+    <div id="project1">
+      <div class="head">MyHomePage</div>
+      <div class="sub">HTML과 CSS를 통한 마이 홈페이지 만들기 과제</div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/MjfBuw1byNg"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
     </div>
+    <br />
+    <div id="project2">
+      <div class="head">Shopping Mall</div>
+      <div class="sub">HTML, CSS, JQuery를 통한 쇼핑몰 만들기 과제</div>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/rjIwfyAr3Ew"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <div id="project3">
+      <div class="head">MBTI Test</div>
+      <div class="sub">HTML과 CSS, JS를 통하여 MBTI Test 만들어 보기<br>사진을 누르면 MBTI Test를 직접 해볼 수 있어요!</a></div>
+      <a href="https://superlative-halva-1cc0aa.netlify.app/index.html"
+        ><img class="mbti" src="./img/mbtitest.png" /></a
+      >
+    </div>
+    <form action="#" accept-charset="UTF-8" name="person_info" method="get">
+      <fieldset style="width: 250">
+        <div id="comment">
+          <legend>Comment</legend>
+          <textarea
+            name="comment"
+            placeholder="코멘트를 남겨주세요!"
+          ></textarea>
+        </div>
+        <div id="button">
+          <div class="submit"><input type="submit" value="submit" /></div>
+          <div class="reset"><input type="reset" value="reset" /></div>
+        </div>
+      </fieldset>
+    </form>
+    <div class="top" onclick="scrollToTop();return false;">&uarr;</div>
+
+    <div class="footer">
+      <span
+        >Phone
+        <div>010-1234-5678</div></span
+      >
+      <span
+        >Email
+        <div>jungseo1024@gmail.com</div></span
+      >
+      <span
+        >Follow Me
+        <div>insta @10x109</div></span
+      >
+    </div>
+    <span class="last">
+      2023 By Seo&nbsp;Young.<br />jungseo1024@gmail.com</span
+    >
   </body>
 </html>

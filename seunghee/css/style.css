@@ -110,6 +110,21 @@ a {
 #article_3 li {
   list-style: none;
 }
+#plan_list{
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.plan{
+  transform:translateX(200%);
+  transition: transform 0.4s ease;
+}
+.plan.show{
+  transform: translateX(0);
+}
+
 footer {
   border-top: 2px solid #c4c4c3;
   text-align: center;

@@ -76,7 +76,7 @@ window.onload = function () {
   }
 
   document
-      .getElementById('modal_btn')
+      .querySelector('modal_btn')
       .addEventListener('click', onClick);
   document
       .querySelector('.modal_close')

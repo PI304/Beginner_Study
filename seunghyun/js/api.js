@@ -77,44 +77,83 @@ const deleteUser = async () => {
 // Post 가져오기
 const getUserByPost = async () => {
     try {
-        const response = await axios
+        const res = await axios
         // get
             .get(`http://52.78.238.141/api/posts/`)
-        const post = response.data;
+        const post = res.data;
         console.log(post);
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
-        // post 생성
-        const newPost = {
-            title: "New Post",
-            body: "New Post Body",
-            url: "dsf",
-            introduction: "new post",
-            userId: 1
-        };
-        const createResponse = await axios.post(`http://52.78.238.141/api/posts/`)
-        const createdPost = createResponse.data;
+        // 새 post 생성
+
+    const newPost = async () =>  {
+        const userIdName = document
+        .getElementById("getUserNameInput")
+        .value;
+        const content = document
+        .getElementById("getContentInput")
+        .value;
+        const toUser = document
+        .getElementById("getToUserInput")
+        .value;
+
+    //     const id = document
+    //     .getElementById("newPostIdInput")
+    //     .value;
+    //     const userId = document
+    //     .getElementById("getUserIdInput")
+    //     .value;
+    // const content = document
+    //     .getElementById("getContentInput")
+    //     .value;
+    // const toUser = document
+    //     .getElementById("getToUserInput")
+    //     .value;
+    // const updatedAt = document
+    //     .getElementById("getUpdatedAtInput")
+    //     .value; 
+    // const createdAt = document
+    //     .getElementById("getCreatedAtInput")
+    //     .value;   
+        
+    try {
+        const res = await axios.post(`http://52.78.238.141/api/posts/`)
+        const createdPost = res.data;
         console.log(createPost);
+        } catch (error) {
+            console.log(error);
+        }
+        };
 
         // patch로 post 업데이트
-        const updatePost = {
-            title: "Update Post",
-            body: "Updated Post Body",
-            userId: 2
+        const updatePost = async () =>  {
+            const userId = document.getElementById("updateUserPostInput").value;
+            try {
+                const res = await axios.patch(
+                    `http://52.78.238.141/api/users/${PostId}`
+                )
+                const updatePost = res.data;
+                console.log(updatePost);
+            } catch (error) {
+                console.log(error);
+            }
         };
-        const patchResponse = await axios.patch(
-            `http://52.78.238.141/api/posts/${postId}`
-        )
-        const patchPost = patchResponse.data;
-        console.log(patchPost);
 
-        // delete
-        const deleteResponse = await axios.delete(
-            `http://52.78.238.141/api/posts/${postId}`
+        // Post 삭제 delete
+        const deletePost = async () => {
+        const userId = document.getElementById("deletePostIdInput").value;
+        try {
+        const res = await axios.delete(
+            `http://52.78.238.141/api/posts/${PostId}`
         );
-        console.log(deleteResponse.data);
-    } catch (error) {
-        console.log(error);
-    }
-};
+        const deletePost = res.data;
+        console.log(res.data);
+        } catch (error) {
+            console.log(error);
+        }
+    };
 
 // getUserByPost();

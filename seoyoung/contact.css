@@ -134,3 +134,17 @@ input[type="inputmessage"] {
 .header2 {
   margin-bottom: 13px;
 }
+#user{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.userread {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgb(0, 0, 0);
+  height: 100px;
+  width: 500px;
+}

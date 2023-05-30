@@ -1,3 +1,5 @@
+let users = [];
+
 const getData = async () => {
     try {
         // 유저 정보 가져오기
@@ -5,8 +7,23 @@ const getData = async () => {
         const users = res.data;
         console.log(users);
 
+//     } catch (error) {
+//         console.log(error);
+//     }
+// };
+
+// 사용자 정보를 HTML 창에 추가
+    const userInfoDiv = document.getElementById("userInfo");
+    userInfoDiv.innerHTML = ""; // 이전에 출력된 내용 초기화
+
+        
+    const userInfoHtml = users.map((user) => `
+    <p>닉네임: ${user.name}</p>
+    `).join("");
+
+    userInfoDiv.innerHTML = userInfoHtml;
     } catch (error) {
-        console.log(error);
+    console.log(error);
     }
 };
 
@@ -28,10 +45,31 @@ const addUser = async () => {
         const res = await axios.post(`http://52.78.238.141/api/users`, {name, email, url, introduction});
         const newUser = res.data;
         console.log(newUser);
+        // 데이터를 다시 불러옴
+        getData();
     } catch (error) {
         console.log(error);
     }
-    };
+};
+
+// 사용자 정보를 HTML 창에 추가
+const displayUserInfo = (users) => {
+    const userInfoDiv = document.getElementById("userInfo");
+    userInfoDiv.innerHTML = ""; // 이전에 출력된 내용 초기화
+
+    const userInfoHtml = users.map((user) => `
+        <p>닉네임: ${user.name}</p>
+    `).join("");
+
+    userInfoDiv.innerHTML = userInfoHtml;
+};
+
+
+
+
+
+// 최초 데이터 불러오기
+getData();
 
 // userId 가져오기
 const getUserById = async () => {
@@ -63,10 +101,10 @@ const updateUser = async () => {
 };
 
 const deleteUser = async () => {
-    const userId = document.getElementById("deleteUserIdInput").value;
+    const userName = document.getElementById("deleteUserNameInput").value;
     try {
         const res = await axios.delete(
-            `http://52.78.238.141/api/users/${userId}`
+            `http://52.78.238.141/api/users/${userName}`
         );
         console.log(res.data);
     } catch (error) {

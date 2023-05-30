@@ -797,7 +797,6 @@ p#tooltip-text:before {
 /* 스크롤 검은색 배경*/
 
 
-
 #blackScreen {
     position: fixed;
     bottom: 0;
@@ -808,9 +807,9 @@ p#tooltip-text:before {
     text-align: center;
     font-size: 3rem;
     display: none;
-  }
+}
 
-  #education {
+#education {
     position: relative;
     padding-top: 30vh;
     padding-bottom: 30vh;
@@ -818,9 +817,9 @@ p#tooltip-text:before {
     text-align: center;
     font-size: 3rem;
     color: black;
-  }
+}
 
-  #education:before {
+#education:before {
     content: "";
     position: absolute;
     top: 0;
@@ -830,15 +829,15 @@ p#tooltip-text:before {
     background-color: black;
     opacity: 0;
     transition: opacity 0.5s;
-  }
+}
 
-  #education:hover:before {
+#education:hover:before {
     opacity: 0.6;
-  }
+}
 
-  #education:hover {
+#education:hover {
     color: white;
-  }
+}
 
 .largeFont {
     font-weight: 600px;
@@ -862,3 +861,29 @@ p#tooltip-text:before {
     text-align: left;
     /* margin: 3vh; */
 }
+
+/* api 창 */
+.apiwrap {
+    border: solid 1px #000;
+    padding: 2vh;
+    width: 80vh;
+}
+.btncolor {
+    background-color: rgb(243, 234, 224);
+    border: solid 1px #dbcfba;
+    padding: 0.4vh;
+} 
+
+#userInfo {
+    border: solid 1px #939191;
+    /* height: 30vh; */
+    margin: 1vh 0 1vh 0;
+    padding: 1vh;
+}
+
+#userInfo p{
+    border: solid 1px #d2d1d1;
+    margin: 0.3vh 0 0.3vh 0;
+    padding: 0.3vh;
+}
+    

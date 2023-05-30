@@ -138,28 +138,41 @@
                                 <br>
                                 <span>mail address : kicvgh@gmail.com</span>
                             </div>
-                            <div id="api">
-                                <button onclick="getData()">Get Users</button>
-                                <br/><br/>
-                                <input type="text" id="getUserNameInput" placeholder="Enter name (necessary)"/>
-                                <input
-                                    type="text"
-                                    id="getUserEmailInput"
-                                    placeholder="Enter email (necessary)"/>
-                                <input type="text" id="getUserURLInput" placeholder="Enter url"/>
-                                <input
-                                    type="text"
-                                    id="getUserIntroductionInput"
-                                    placeholder="Enter introduction"/>
-                                <button onclick="addUser()">Add User</button>
-                                <br/><br/>
-                                <input type="text" id="getUserIdInput" placeholder="Enter User ID"/>
-                                <button onclick="getUserById()">Get User By Id</button>
-                                <br/><br/>
-                                <input type="text" id="deleteUserIdInput" placeholder="Enter User ID"/>
-                                <button onclick="deleteUser()">Delete User</button>
-                                <!-- <input type="text" id="updateUserIdInput" placeholder="Enter User ID" />
-                                <button onclick="updateUser()">Update User</button> -->
+                            <div class="apiwrap">
+                                <div id="api">
+                                    <button onclick="getData()" class="btncolor">모든 이웃 보기</button>
+                                    <br/>
+                                    <div id="userInfo">
+                                        <p>블로그 이웃 목록</p>
+
+                                    </div>
+                                    <br/>
+                                    <input type="text" id="getUserNameInput" placeholder="Enter name (necessary)"/>
+                                    <input
+                                        type="text"
+                                        id="getUserEmailInput"
+                                        placeholder="Enter email (necessary)"/>
+                                    <input type="text" id="getUserURLInput" placeholder="Enter url"/>
+                                    <input
+                                        type="text"
+                                        id="getUserIntroductionInput"
+                                        placeholder="Enter introduction"/>
+                                    
+                                    
+                                    
+                                    <button onclick="addUser()" class="btncolor">이웃 목록 추가</button>
+                                    <br/><br/>
+                                    
+                                    <input type="text" id="deleteUserNameInput" placeholder="Enter User Name"/>
+                                    <button onclick="deleteUser()" class="btncolor">이웃 목록 삭제</button>
+                                    <!--
+                                        <input type="text" id="getUserIdInput" placeholder="Enter User ID"/>
+                                        <button onclick="getUserById()">Get User By Id</button>
+                                        <br/><br/> 
+                                        <input type="text" id="updateUserIdInput" placeholder="Enter User ID" />
+                                        <button onclick="updateUser()">Update User</button>
+                                    -->
+                                </div>
                             </div>
                         </div>
                     </div>

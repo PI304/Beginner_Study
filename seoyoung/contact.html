@@ -19,6 +19,7 @@
       type="image/x-icon"
     />
     <script defer src="./contact.js"></script>
+    <script defer src="./api.js"></script>
   </head>
   <body>
     <div id="header">
@@ -41,13 +42,25 @@
       <div class="email1">jungseo1024@gmail.com</div>
     </div>
     <div class="input">
-      <div class="header1">Name<br /><input type="inputname" autofocus /></div>
-      <div class="header2">
-        Email <br /><input type="inputemail" autofocus /><br />
+      <div class="header1">
+        Name<br /><input type="inputname" id="name" autofocus />
       </div>
+      <div class="header2">
+        Email <br /><input type="inputemail" id="email" autofocus /><br />
+      </div>
+      <div>url<br /><input type="inputname" id="url" autofocus /></div>
       Message <br />
-      <input type="inputmessage" autofocus />
-      <div class="modal_btn" data-toggle="tooltip" title="이메일을 잘 작성하였다면 제출버튼을 눌러주세요!">Submit</div>
+      <input type="inputmessage" id="message" autofocus />
+      <div
+        class="modal_btn"
+        data-toggle="tooltip"
+        title="이메일을 잘 작성하였다면 제출버튼을 눌러주세요!"
+        onclick="getData()"
+        ,
+        onclick="addUser()"
+      >
+        Submit
+      </div>
     </div>
     <div class="modal_background"></div>
     <div class="modal_wrap">
@@ -55,8 +68,11 @@
         <img class="closeImg" src="./img/458595.png" alt="x버튼" />
       </div>
       <div class="text">
-        보내주셔서 감사합니다! <br>빠른 시일 내로 연락드리겠습니다.
+        보내주셔서 감사합니다! <br />빠른 시일 내로 연락드리겠습니다.
       </div>
+    </div>
+    <div id="user">
+      <div class="userread"></div>
     </div>
     <div class="footer">
       <span
@@ -76,4 +92,5 @@
       2023 By Seo&nbsp;Young.<br />jungseo1024@gmail.com</span
     >
   </body>
+  <script src="../node_modules/axios/dist/axios.min.js"></script>
 </html>
